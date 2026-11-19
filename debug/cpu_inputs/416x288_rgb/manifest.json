@@ -1,0 +1,137 @@
+{
+  "Bird_DSC02510.raw": {
+    "source_size": [
+      3840,
+      2560
+    ],
+    "input_size": [
+      416,
+      288
+    ],
+    "resized": [
+      416,
+      277
+    ],
+    "offset": [
+      0,
+      5
+    ],
+    "scale_xy": [
+      0.10833333333333334,
+      0.108203125
+    ],
+    "channel_order": "rgb",
+    "storage": "chw",
+    "pad": 128,
+    "source": "assets_aux\\Bird_DSC02510.jpg",
+    "sha256": "bb62af83c10a4ad876c38573663f2a4bc273e3e39a7e4e21cd0e5c0dad067414"
+  },
+  "Cat_DSC04051.raw": {
+    "source_size": [
+      3840,
+      2560
+    ],
+    "input_size": [
+      416,
+      288
+    ],
+    "resized": [
+      416,
+      277
+    ],
+    "offset": [
+      0,
+      5
+    ],
+    "scale_xy": [
+      0.10833333333333334,
+      0.108203125
+    ],
+    "channel_order": "rgb",
+    "storage": "chw",
+    "pad": 128,
+    "source": "assets_aux\\Cat_DSC04051.jpg",
+    "sha256": "8b937c60b3e21e4327360c104d9e1f726b5493ab1ab07e0eb6849119904e210c"
+  },
+  "Empty_DSC03284.raw": {
+    "source_size": [
+      3840,
+      2560
+    ],
+    "input_size": [
+      416,
+      288
+    ],
+    "resized": [
+      416,
+      277
+    ],
+    "offset": [
+      0,
+      5
+    ],
+    "scale_xy": [
+      0.10833333333333334,
+      0.108203125
+    ],
+    "channel_order": "rgb",
+    "storage": "chw",
+    "pad": 128,
+    "source": "assets_aux\\Empty_DSC03284.jpg",
+    "sha256": "3816916a8d9219c0183a85229c9b9d7f8863158508b7752df8659624d2ddc3ce"
+  },
+  "Flight_DSC02983.raw": {
+    "source_size": [
+      3840,
+      2560
+    ],
+    "input_size": [
+      416,
+      288
+    ],
+    "resized": [
+      416,
+      277
+    ],
+    "offset": [
+      0,
+      5
+    ],
+    "scale_xy": [
+      0.10833333333333334,
+      0.108203125
+    ],
+    "channel_order": "rgb",
+    "storage": "chw",
+    "pad": 128,
+    "source": "assets_aux\\Flight_DSC02983.jpg",
+    "sha256": "44e18476b135db60840ad39ca1241e73cb3cb0b701b59074b77c8567d76400a8"
+  },
+  "Human_DSC03106.raw": {
+    "source_size": [
+      3840,
+      2560
+    ],
+    "input_size": [
+      416,
+      288
+    ],
+    "resized": [
+      416,
+      277
+    ],
+    "offset": [
+      0,
+      5
+    ],
+    "scale_xy": [
+      0.10833333333333334,
+      0.108203125
+    ],
+    "channel_order": "rgb",
+    "storage": "chw",
+    "pad": 128,
+    "source": "assets_aux\\Human_DSC03106.jpg",
+    "sha256": "5679c87e78f9beb3e677cb7f5bc66a11c2847a6633ff3422e6647fd389712d73"
+  }
+}

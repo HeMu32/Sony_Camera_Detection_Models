@@ -1,0 +1,45 @@
+Galcore warning: MMU is disabled!
+DW Enhancement is missing. Conv3x3 enhancement cannot be turned onparam 0 input dtype=0x3 quant=0x2 shape=320x320x3x1 bytes=307200 scale=0.00784313772 zp=128
+param 1 output dtype=0x3 quant=0x2 shape=1x1x6x1 bytes=6 scale=0.00390625 zp=0
+param 2 output dtype=0x3 quant=0x2 shape=40x40x30x1 bytes=48000 scale=0.046875 zp=128
+param 3 output dtype=0x3 quant=0x2 shape=20x20x30x1 bytes=12000 scale=0.046875 zp=128
+param 4 output dtype=0x3 quant=0x2 shape=10x10x30x1 bytes=3000 scale=0.046875 zp=128
+param 5 output dtype=0x3 quant=0x2 shape=5x5x30x1 bytes=750 scale=0.046875 zp=128
+param 6 output dtype=0x3 quant=0x2 shape=3x3x30x1 bytes=270 scale=0.046875 zp=128
+param 7 output dtype=0x3 quant=0x2 shape=1x1x30x1 bytes=30 scale=0.046875 zp=128
+param 8 output dtype=0x3 quant=0x2 shape=1x1x6x1 bytes=6 scale=0.00390625 zp=0
+param 9 output dtype=0x3 quant=0x2 shape=40x40x24x1 bytes=38400 scale=0.0827599987 zp=129
+param 10 output dtype=0x3 quant=0x2 shape=20x20x24x1 bytes=9600 scale=0.127638996 zp=147
+param 11 output dtype=0x3 quant=0x2 shape=10x10x24x1 bytes=2400 scale=0.129427999 zp=141
+param 12 output dtype=0x3 quant=0x2 shape=5x5x24x1 bytes=600 scale=0.188388005 zp=145
+param 13 output dtype=0x3 quant=0x2 shape=3x3x24x1 bytes=216 scale=0.201147005 zp=126
+param 14 output dtype=0x3 quant=0x2 shape=1x1x24x1 bytes=24 scale=0.0560249984 zp=195
+param 15 output dtype=0x3 quant=0x2 shape=1x1x6x1 bytes=6 scale=0.00390625 zp=0
+param 16 output dtype=0x3 quant=0x2 shape=6x40x40x1 bytes=9600 scale=0.00390625 zp=0
+param 17 output dtype=0x3 quant=0x2 shape=6x20x20x1 bytes=2400 scale=0.00390625 zp=0
+param 18 output dtype=0x3 quant=0x2 shape=6x10x10x1 bytes=600 scale=0.00390625 zp=0
+param 19 output dtype=0x3 quant=0x2 shape=6x5x5x1 bytes=150 scale=0.00390625 zp=0
+param 20 output dtype=0x3 quant=0x2 shape=6x3x3x1 bytes=54 scale=0.00390625 zp=0
+param 21 output dtype=0x3 quant=0x2 shape=1x1x6x1 bytes=6 scale=0.00390625 zp=0
+graph verified
+wrote outputs/coeff_probe_01/NoTrace.0.raw
+wrote outputs/coeff_probe_01/NoTrace.1.raw
+wrote outputs/coeff_probe_01/NoTrace.2.raw
+wrote outputs/coeff_probe_01/NoTrace.3.raw
+wrote outputs/coeff_probe_01/NoTrace.4.raw
+wrote outputs/coeff_probe_01/NoTrace.5.raw
+wrote outputs/coeff_probe_01/NoTrace.6.raw
+wrote outputs/coeff_probe_01/NoTrace.7.raw
+wrote outputs/coeff_probe_01/NoTrace.8.raw
+wrote outputs/coeff_probe_01/NoTrace.9.raw
+wrote outputs/coeff_probe_01/NoTrace.10.raw
+wrote outputs/coeff_probe_01/NoTrace.11.raw
+wrote outputs/coeff_probe_01/NoTrace.12.raw
+wrote outputs/coeff_probe_01/NoTrace.13.raw
+wrote outputs/coeff_probe_01/NoTrace.14.raw
+wrote outputs/coeff_probe_01/NoTrace.15.raw
+wrote outputs/coeff_probe_01/NoTrace.16.raw
+wrote outputs/coeff_probe_01/NoTrace.17.raw
+wrote outputs/coeff_probe_01/NoTrace.18.raw
+wrote outputs/coeff_probe_01/NoTrace.19.raw
+wrote outputs/coeff_probe_01/NoTrace.20.raw

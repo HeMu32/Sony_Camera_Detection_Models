@@ -1,0 +1,215 @@
+{
+  "method": "host tiling with experimental priors, not camera-native",
+  "model_sha256": "28782d52ac73d7a537a2576bd8f9e4e6b5f7ccd23a420093e1a1a14b556d06f9",
+  "decoded_grid": 40,
+  "threshold": 0.85,
+  "tiles": [
+    {
+      "source_xyxy": [
+        0,
+        0,
+        3840,
+        2560
+      ],
+      "input_sha256": "184512d5b94c5a167b9fa8c4c5d3c19f4b08ad96d39a5216c24838e51f618517",
+      "classification": [
+        {
+          "grid": 40,
+          "max": 1.130042346630944e-05,
+          "over_threshold": []
+        },
+        {
+          "grid": 20,
+          "max": 7.766801900288556e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 10,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 5,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 3,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 1,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        }
+      ]
+    },
+    {
+      "source_xyxy": [
+        0,
+        0,
+        2560,
+        1707
+      ],
+      "input_sha256": "93f4ba1f41cae7a49651319f77b475b43ce4943197c465c8cb4b5fa7694f5eba",
+      "classification": [
+        {
+          "grid": 40,
+          "max": 2.1781619579996914e-05,
+          "over_threshold": []
+        },
+        {
+          "grid": 20,
+          "max": 7.766801900288556e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 10,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 5,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 3,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 1,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        }
+      ]
+    },
+    {
+      "source_xyxy": [
+        1280,
+        0,
+        3840,
+        1707
+      ],
+      "input_sha256": "216f762cb52545c6c01745dd808c1d4ceffb49927651d8d3e3fe50b167fb46ae",
+      "classification": [
+        {
+          "grid": 40,
+          "max": 2.1781619579996914e-05,
+          "over_threshold": []
+        },
+        {
+          "grid": 20,
+          "max": 7.766801900288556e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 10,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 5,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 3,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 1,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        }
+      ]
+    },
+    {
+      "source_xyxy": [
+        0,
+        853,
+        2560,
+        2560
+      ],
+      "input_sha256": "76c9ec98cc2d88074d35bad494bc027f7a3a06533ba580dd9c5871684a716cfc",
+      "classification": [
+        {
+          "grid": 40,
+          "max": 1.5688663552282378e-05,
+          "over_threshold": []
+        },
+        {
+          "grid": 20,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 10,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 5,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 3,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 1,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        }
+      ]
+    },
+    {
+      "source_xyxy": [
+        1280,
+        853,
+        3840,
+        2560
+      ],
+      "input_sha256": "a0444fabb44806e343f0cc4a7af1d10ad1050afc9686368c02bbf99cd5199ec2",
+      "classification": [
+        {
+          "grid": 40,
+          "max": 7.411115802824497e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 20,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 10,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 5,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 3,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        },
+        {
+          "grid": 1,
+          "max": 6.438913260353729e-06,
+          "over_threshold": []
+        }
+      ]
+    }
+  ],
+  "full_frame_boxes": [],
+  "merged_boxes": []
+}

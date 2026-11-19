@@ -1,0 +1,26 @@
+{
+ "method": "host grouping of A1 II slot-18 18-channel heatmap, not the firmware decoder",
+ "heatmap_max": 0.009005389176309109,
+ "boxes": [
+  {
+   "threshold": 0.02,
+   "xyxy_source": null,
+   "joints": []
+  },
+  {
+   "threshold": 0.05,
+   "xyxy_source": null,
+   "joints": []
+  },
+  {
+   "threshold": 0.1,
+   "xyxy_source": null,
+   "joints": []
+  },
+  {
+   "threshold": 0.15,
+   "xyxy_source": null,
+   "joints": []
+  }
+ ]
+}

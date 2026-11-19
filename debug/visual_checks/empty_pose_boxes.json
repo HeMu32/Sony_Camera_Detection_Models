@@ -1,0 +1,6 @@
+{
+  "method": "host grouping of Sony slot-01 pose outputs, not firmware bbox decoder",
+  "threshold": 0.25,
+  "heatmap_max": 0.011524391360580921,
+  "boxes": []
+}

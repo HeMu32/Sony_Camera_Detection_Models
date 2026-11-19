@@ -1,0 +1,9 @@
+/datasets/
+/runs/
+/debug/
+/extracted/
+/firmware/
+/tools/TIM-VX/
+/tools/pydeps/
+__pycache__/
+*.pyc

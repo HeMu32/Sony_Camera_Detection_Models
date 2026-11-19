@@ -1,0 +1,49 @@
+Galcore warning: MMU is disabled!
+DW Enhancement is missing. Conv3x3 enhancement cannot be turned onparam 0 input dtype=0x3 quant=0x2 shape=416x288x3x1 bytes=359424 scale=0.00392156886 zp=127
+param 1 output dtype=0x3 quant=0x2 shape=52x36x18x1 bytes=33696 scale=0.0107074715 zp=140
+param 2 output dtype=0x3 quant=0x2 shape=52x36x1x1 bytes=1872 scale=0.00741319219 zp=149
+param 3 output dtype=0x3 quant=0x2 shape=52x36x18x1 bytes=33696 scale=0.00450269459 zp=15
+param 4 output dtype=0x3 quant=0x2 shape=52x36x36x1 bytes=67392 scale=0.258329451 zp=125
+param 5 output dtype=0x3 quant=0x2 shape=52x36x2x1 bytes=3744 scale=0.147856683 zp=146
+param 6 output dtype=0x3 quant=0x2 shape=52x36x36x1 bytes=67392 scale=0.0117647061 zp=127
+param 7 output dtype=0x3 quant=0x2 shape=52x36x1x1 bytes=1872 scale=0.00833385158 zp=84
+param 8 output dtype=0x3 quant=0x2 shape=52x36x2x1 bytes=3744 scale=0.00505091436 zp=130
+param 9 output dtype=0x3 quant=0x2 shape=52x36x2x1 bytes=3744 scale=0.246647015 zp=39
+param 10 output dtype=0x3 quant=0x2 shape=52x36x2x1 bytes=3744 scale=0.205558524 zp=1
+param 11 output dtype=0x3 quant=0x2 shape=52x36x2x1 bytes=3744 scale=0.00839293655 zp=132
+param 12 output dtype=0x3 quant=0x2 shape=52x36x1x1 bytes=1872 scale=0.00753595121 zp=115
+graph verified
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x42500 outSramStartAddr 0x800, outSramEndAddrPlus1 0x42500 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+Warning: SRAM overlap, inSramStartAddr 0x8ce00, inSramEndAddrPlus1 0xceb00 outSramStartAddr 0x8ce00, outSramEndAddrPlus1 0xceb00 
+wrote outputs/m2_s18/Cat.0.raw
+wrote outputs/m2_s18/Cat.1.raw
+wrote outputs/m2_s18/Cat.2.raw
+wrote outputs/m2_s18/Cat.3.raw
+wrote outputs/m2_s18/Cat.4.raw
+wrote outputs/m2_s18/Cat.5.raw
+wrote outputs/m2_s18/Cat.6.raw
+wrote outputs/m2_s18/Cat.7.raw
+wrote outputs/m2_s18/Cat.8.raw
+wrote outputs/m2_s18/Cat.9.raw
+wrote outputs/m2_s18/Cat.10.raw
+wrote outputs/m2_s18/Cat.11.raw

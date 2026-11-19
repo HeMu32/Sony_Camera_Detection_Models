@@ -1,0 +1,1926 @@
+{
+  "slot": "10",
+  "model_sha256": "22a46a633b90f780026f57b21b2d34fa1dbd7b49237276a415eb109537da39be",
+  "cuda_device": "NVIDIA GeForce RTX 5060 Ti",
+  "threshold": 0.85,
+  "decoder": "experimental host anchor probe; not camera-native",
+  "match_iou_minimum": 0.5,
+  "inputs": [
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Flight_DSC02983.raw",
+      "sha256": "02de86012bd3d68d57b153c0ca38d761a6353c8055a33fad2a4b57dbd41a0466",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 13735,
+          "max_abs_delta": 1
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 4,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 13739,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9999998807907104,
+            "delta": [
+              -0.6462799906730652,
+              -0.6462799906730652,
+              0.8078500032424927,
+              -0.4847099781036377
+            ],
+            "xyxy_raster": [
+              93.68390119075775,
+              142.54497201144696,
+              198.76061308383942,
+              187.1085585862398
+            ]
+          }
+        ],
+        "peak": 0.9999998807907104,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9999998807907104,
+            "delta": [
+              -0.6462799906730652,
+              -0.6462799906730652,
+              0.8078500032424927,
+              -0.4847099781036377
+            ],
+            "xyxy_raster": [
+              93.68390119075775,
+              142.54497201144696,
+              198.76061308383942,
+              187.1085585862398
+            ]
+          }
+        ],
+        "peak": 0.9999998807907104,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Bird_DSC02510.raw",
+      "sha256": "261275531d6fbe0eaa261cbe42e62cc52950fc8c08fefdd6b4eb82803580e879",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 16176,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 33,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 71,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 39,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 34,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 13,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 40,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 87,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 56,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 59,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 24,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 9,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 1,
+          "max_abs_delta": 38
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 1,
+          "max_abs_delta": 38
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 16643,
+      "max_abs_delta": 38,
+      "simulator": {
+        "boxes": [],
+        "peak": 0.00013621327525470406,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 0.00013621327525470406,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Empty_DSC03284.raw",
+      "sha256": "184512d5b94c5a167b9fa8c4c5d3c19f4b08ad96d39a5216c24838e51f618517",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 17413,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 40,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 26,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 22,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 26,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 5,
+          "max_abs_delta": 1
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 28,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 46,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 27,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 31,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 18,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 7,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 17691,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [],
+        "peak": 7.21330288797617e-05,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 7.21330288797617e-05,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Human_DSC03106.raw",
+      "sha256": "50ee39187e3216c734e61c2a0f5f0b118b3dbd70b9c1fb11f829d7acdab25660",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 14122,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 60,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 121,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 48,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 22,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 5,
+          "max_abs_delta": 1
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 102,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 154,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 105,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 78,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 30,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 20,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 2,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 14869,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [],
+        "peak": 0.0032611433416604996,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 0.0038188216276466846,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Cat_DSC04051.raw",
+      "sha256": "821cc28a8a876be3c7c114eb434ff8f13d590a3cd26e37d5f38bddaf0b179d97",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 14053,
+          "max_abs_delta": 1
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 4,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 14057,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [],
+        "peak": 0.00013621039397548884,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 0.00013621039397548884,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\mixed_02\\BirdPlane.raw",
+      "sha256": "81ca3ac2538c7f4a4844522bb65758b01bf42da4b3c30b9684458b25b652bdfd",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 14367,
+          "max_abs_delta": 1
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 15,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 29,
+          "max_abs_delta": 1
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 15,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 25,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 8,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 7,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 16,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 15,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 27,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 25,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 6,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 14557,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9999992847442627,
+            "delta": [
+              -0.6462799906730652,
+              -0.4847099781036377,
+              0.8078500032424927,
+              -0.3231399953365326
+            ],
+            "xyxy_raster": [
+              93.68390119075775,
+              142.6065064251423,
+              198.76061308383942,
+              188.63364164233207
+            ]
+          }
+        ],
+        "peak": 0.9999992847442627,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9999992847442627,
+            "delta": [
+              -0.6462799906730652,
+              -0.4847099781036377,
+              0.8078500032424927,
+              -0.3231399953365326
+            ],
+            "xyxy_raster": [
+              93.68390119075775,
+              142.6065064251423,
+              198.76061308383942,
+              188.63364164233207
+            ]
+          }
+        ],
+        "peak": 0.9999992847442627,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\plane_geo_01\\mirror.raw",
+      "sha256": "0b582724fe76b0d99a15d9dbc3061ad5a4af071ca2b3eb3f254ac25f80e485d0",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 14065,
+          "max_abs_delta": 1
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 12,
+          "max_abs_delta": 1
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 9,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 18,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 8,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 14,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 16,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 34,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 19,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 4,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 14200,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              10,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9999551773071289,
+            "delta": [
+              0.4847099781036377,
+              -0.8078500032424927,
+              0.8078500032424927,
+              -0.8078500032424927
+            ],
+            "xyxy_raster": [
+              119.79495084285736,
+              143.14614590406418,
+              224.87166273593903,
+              184.92076722383499
+            ]
+          }
+        ],
+        "peak": 0.9999551773071289,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              10,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9999551773071289,
+            "delta": [
+              0.4847099781036377,
+              -0.8078500032424927,
+              0.8078500032424927,
+              -0.8078500032424927
+            ],
+            "xyxy_raster": [
+              119.79495084285736,
+              143.14614590406418,
+              224.87166273593903,
+              184.92076722383499
+            ]
+          }
+        ],
+        "peak": 0.9999551773071289,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\plane_geo_01\\shift_a.raw",
+      "sha256": "8563fadc1f8f6866f51b7ffd2661c1328b7de3fefa03af0c93cf2219cab44f5b",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 13784,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 82,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 151,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 48,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 27,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 7,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 2,
+          "max_abs_delta": 2
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 52,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 149,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 82,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 94,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 26,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 4,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 2,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 14510,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 4,
+            "classification_softmax": 0.9999384880065918,
+            "delta": [
+              -0.3231399953365326,
+              -1.6157000064849854,
+              -0.1615699976682663,
+              0.8078500032424927
+            ],
+            "xyxy_raster": [
+              96.69193157255648,
+              137.50563234090805,
+              200.38640991151334,
+              185.34256941080093
+            ]
+          }
+        ],
+        "peak": 0.9999384880065918,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 4,
+            "classification_softmax": 0.9999384880065918,
+            "delta": [
+              -0.3231399953365326,
+              -1.6157000064849854,
+              -0.1615699976682663,
+              0.8078500032424927
+            ],
+            "xyxy_raster": [
+              96.69193157255648,
+              137.50563234090805,
+              200.38640991151334,
+              185.34256941080093
+            ]
+          }
+        ],
+        "peak": 0.9999384880065918,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\plane_geo_01\\shift_b.raw",
+      "sha256": "2341549431b1f897aa92f0ccc72ca25bc2d2b76b0597702026cb65d035cd1c62",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 13332,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 15,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 48,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 47,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 24,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 6,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 11,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 35,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 35,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 39,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 21,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 5,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 2,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 13621,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              8,
+              10
+            ],
+            "anchor": 4,
+            "classification_softmax": 0.9999617338180542,
+            "delta": [
+              0.1615699976682663,
+              1.6157000064849854,
+              -0.3231399953365326,
+              0.6462799906730652
+            ],
+            "xyxy_raster": [
+              87.53177734017372,
+              151.41797490715982,
+              187.92905191779136,
+              197.7338233411312
+            ]
+          }
+        ],
+        "peak": 0.9999617338180542,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              8,
+              10
+            ],
+            "anchor": 4,
+            "classification_softmax": 0.9999617338180542,
+            "delta": [
+              0.1615699976682663,
+              1.6157000064849854,
+              -0.3231399953365326,
+              0.6462799906730652
+            ],
+            "xyxy_raster": [
+              87.53177734017372,
+              151.41797490715982,
+              187.92905191779136,
+              197.7338233411312
+            ]
+          }
+        ],
+        "peak": 0.9999617338180542,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\plane_geo_01\\shift_c.raw",
+      "sha256": "8be969a240f589b327561ab22697ccfc2b3511e3190878d040c5a3529525bc45",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 14186,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 135,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 159,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 58,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 24,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 7,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 104,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 176,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 121,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 71,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 21,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 1,
+          "max_abs_delta": 38
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 15072,
+      "max_abs_delta": 38,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              10,
+              10
+            ],
+            "anchor": 4,
+            "classification_softmax": 0.9998633861541748,
+            "delta": [
+              -0.4847099781036377,
+              1.777269959449768,
+              -0.3231399953365326,
+              0.1615699976682663
+            ],
+            "xyxy_raster": [
+              112.61011906266212,
+              154.21516079902648,
+              213.00739364027976,
+              196.25181727409364
+            ]
+          }
+        ],
+        "peak": 0.9998633861541748,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              10,
+              10
+            ],
+            "anchor": 4,
+            "classification_softmax": 0.9998835325241089,
+            "delta": [
+              -0.4847099781036377,
+              1.777269959449768,
+              -0.3231399953365326,
+              0.1615699976682663
+            ],
+            "xyxy_raster": [
+              112.61011906266212,
+              154.21516079902648,
+              213.00739364027976,
+              196.25181727409364
+            ]
+          }
+        ],
+        "peak": 0.9998835325241089,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 2.014636993408203e-05
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\plane_geo_01\\zoom_in.raw",
+      "sha256": "1c8f5ab83cf1865c494adc06feb292bae1a9a18b6fdf6f1eb523e218250fcab5",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 13778,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 23,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 61,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 30,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 23,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 5,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 41,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 51,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 42,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 30,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 19,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 2,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 14109,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [],
+        "peak": 0.4603065848350525,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 0.4603065848350525,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\plane_geo_01\\zoom_out.raw",
+      "sha256": "f873037b370aec4b2f77865713c670bddd8441ecaa46532414550b7ce5e7af0b",
+      "outputs": {
+        "0": {
+          "bytes": 115200,
+          "different_bytes": 15135,
+          "max_abs_delta": 2
+        },
+        "1": {
+          "bytes": 28800,
+          "different_bytes": 66,
+          "max_abs_delta": 2
+        },
+        "2": {
+          "bytes": 7200,
+          "different_bytes": 135,
+          "max_abs_delta": 2
+        },
+        "3": {
+          "bytes": 1800,
+          "different_bytes": 70,
+          "max_abs_delta": 2
+        },
+        "4": {
+          "bytes": 450,
+          "different_bytes": 23,
+          "max_abs_delta": 2
+        },
+        "5": {
+          "bytes": 162,
+          "different_bytes": 9,
+          "max_abs_delta": 2
+        },
+        "6": {
+          "bytes": 18,
+          "different_bytes": 2,
+          "max_abs_delta": 1
+        },
+        "7": {
+          "bytes": 153600,
+          "different_bytes": 71,
+          "max_abs_delta": 1
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 151,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 121,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 74,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 32,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 8,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 2,
+          "max_abs_delta": 1
+        },
+        "14": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 409680,
+      "different_bytes": 15899,
+      "max_abs_delta": 2,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9928032755851746,
+            "delta": [
+              -0.4847099781036377,
+              -0.8078500032424927,
+              -0.4847099781036377,
+              -1.454129934310913
+            ],
+            "xyxy_raster": [
+              107.09658486247062,
+              145.67875375151635,
+              188.236801558733,
+              182.38815937638282
+            ]
+          }
+        ],
+        "peak": 0.9928032755851746,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 10,
+            "label": "Plane",
+            "class_index": 1,
+            "grid_xy": [
+              9,
+              10
+            ],
+            "anchor": 3,
+            "classification_softmax": 0.9915745854377747,
+            "delta": [
+              -0.4847099781036377,
+              -0.8078500032424927,
+              -0.4847099781036377,
+              -1.454129934310913
+            ],
+            "xyxy_raster": [
+              107.09658486247062,
+              145.67875375151635,
+              188.236801558733,
+              182.38815937638282
+            ]
+          }
+        ],
+        "peak": 0.9915745854377747,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0012286901473999023
+        }
+      ]
+    }
+  ],
+  "forward_ms_first_input": {
+    "simulator": {
+      "median": 24.666339111328124,
+      "samples": [
+        24.05447998046875,
+        22.944813537597657,
+        22.97337188720703,
+        25.2781982421875,
+        26.190277099609375,
+        27.17351379394531
+      ]
+    },
+    "simple": {
+      "median": 25.465258026123045,
+      "samples": [
+        23.156535339355468,
+        22.894668579101562,
+        25.656964111328126,
+        26.212301635742186,
+        26.1381103515625,
+        25.27355194091797
+      ]
+    }
+  }
+}

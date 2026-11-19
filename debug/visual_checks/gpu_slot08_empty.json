@@ -1,0 +1,8 @@
+{
+  "method": "limited host probe, not camera-native priors or full detector",
+  "threshold": 0.85,
+  "class1_softmax_max_by_head": {
+    "08": 1.130042346630944e-05
+  },
+  "boxes": []
+}

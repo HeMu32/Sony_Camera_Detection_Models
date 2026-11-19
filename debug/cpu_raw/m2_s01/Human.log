@@ -1,0 +1,7 @@
+Galcore warning: MMU is disabled!
+DW Enhancement is missing. Conv3x3 enhancement cannot be turned onparam 0 input dtype=0x3 quant=0x2 shape=512x336x3x1 bytes=516096 scale=0.00392156886 zp=0
+param 1 output dtype=0x3 quant=0x2 shape=64x42x40x1 bytes=107520 scale=0.00762748485 zp=127
+param 2 output dtype=0x3 quant=0x2 shape=64x42x19x1 bytes=51072 scale=0.00384146371 zp=4
+graph verified
+wrote outputs/m2_s01/Human.0.raw
+wrote outputs/m2_s01/Human.1.raw

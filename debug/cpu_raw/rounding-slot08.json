@@ -1,0 +1,1905 @@
+{
+  "slot": "08",
+  "model_sha256": "28782d52ac73d7a537a2576bd8f9e4e6b5f7ccd23a420093e1a1a14b556d06f9",
+  "cuda_device": "NVIDIA GeForce RTX 5060 Ti",
+  "threshold": 0.85,
+  "decoder": "experimental host anchor probe; not camera-native",
+  "match_iou_minimum": 0.5,
+  "inputs": [
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Bird_DSC02510.raw",
+      "sha256": "261275531d6fbe0eaa261cbe42e62cc52950fc8c08fefdd6b4eb82803580e879",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 8,
+          "max_abs_delta": 4
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 7,
+          "max_abs_delta": 4
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 6,
+          "max_abs_delta": 4
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 20,
+          "max_abs_delta": 3
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 4,
+          "max_abs_delta": 3
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 3,
+          "max_abs_delta": 3
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 232,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 338,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 113,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 22,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 9,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 5,
+          "max_abs_delta": 1
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 767,
+      "max_abs_delta": 4,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              17,
+              25
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9992256164550781,
+            "delta": [
+              0.5793200135231018,
+              -0.4965599775314331,
+              -0.4138000011444092,
+              -0.24827998876571655
+            ],
+            "xyxy_raster": [
+              123.4230143070221,
+              183.56060303151608,
+              161.35058245658874,
+              220.5761603027582
+            ]
+          },
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              1,
+              25
+            ],
+            "anchor": 0,
+            "classification_softmax": 0.978115975856781,
+            "delta": [
+              -0.24827998876571655,
+              -0.4965599775314331,
+              0.5793200135231018,
+              -0.9931199550628662
+            ],
+            "xyxy_raster": [
+              -1.3664902329444875,
+              176.97639824151992,
+              24.234333503246305,
+              225.18405650854112
+            ]
+          }
+        ],
+        "peak": 0.9992256164550781,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              17,
+              25
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9992256164550781,
+            "delta": [
+              0.5793200135231018,
+              -0.4965599775314331,
+              -0.4138000011444092,
+              -0.24827998876571655
+            ],
+            "xyxy_raster": [
+              123.4230143070221,
+              183.56060303151608,
+              161.35058245658874,
+              220.5761603027582
+            ]
+          },
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              1,
+              25
+            ],
+            "anchor": 0,
+            "classification_softmax": 0.978115975856781,
+            "delta": [
+              -0.24827998876571655,
+              -0.4965599775314331,
+              0.5793200135231018,
+              -0.9931199550628662
+            ],
+            "xyxy_raster": [
+              -1.3664902329444875,
+              176.97639824151992,
+              24.234333503246305,
+              225.18405650854112
+            ]
+          }
+        ],
+        "peak": 0.9992256164550781,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        },
+        {
+          "simulator_index": 1,
+          "simple_index": 1,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Flight_DSC02983.raw",
+      "sha256": "02de86012bd3d68d57b153c0ca38d761a6353c8055a33fad2a4b57dbd41a0466",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 96,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 214,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 47,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 11,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 369,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [],
+        "peak": 8.480257383780554e-05,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 8.480257383780554e-05,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Empty_DSC03284.raw",
+      "sha256": "184512d5b94c5a167b9fa8c4c5d3c19f4b08ad96d39a5216c24838e51f618517",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 145,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 269,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 89,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 22,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 529,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [],
+        "peak": 1.130042346630944e-05,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 1.130042346630944e-05,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Human_DSC03106.raw",
+      "sha256": "50ee39187e3216c734e61c2a0f5f0b118b3dbd70b9c1fb11f829d7acdab25660",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 11,
+          "max_abs_delta": 4
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 8,
+          "max_abs_delta": 4
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 18,
+          "max_abs_delta": 4
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 19,
+          "max_abs_delta": 3
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 1,
+          "max_abs_delta": 3
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 185,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 248,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 76,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 23,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 9,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 599,
+      "max_abs_delta": 4,
+      "simulator": {
+        "boxes": [],
+        "peak": 0.0007239477126859128,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 0.0007239477126859128,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\320x320_rgb\\Cat_DSC04051.raw",
+      "sha256": "821cc28a8a876be3c7c114eb434ff8f13d590a3cd26e37d5f38bddaf0b179d97",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 173,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 174,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [],
+        "peak": 0.0013211194891482592,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 0.0013211194891482592,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "debug\\cpu_inputs\\mixed_02\\BirdPlane.raw",
+      "sha256": "81ca3ac2538c7f4a4844522bb65758b01bf42da4b3c30b9684458b25b652bdfd",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 9,
+          "max_abs_delta": 4
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 2,
+          "max_abs_delta": 4
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 14,
+          "max_abs_delta": 4
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 15,
+          "max_abs_delta": 3
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 8,
+          "max_abs_delta": 3
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 246,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 319,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 79,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 29,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 6,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 730,
+      "max_abs_delta": 4,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              17,
+              29
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9968639612197876,
+            "delta": [
+              0.6620799899101257,
+              -0.4138000011444092,
+              -0.4965599775314331,
+              -0.33103999495506287
+            ],
+            "xyxy_raster": [
+              124.07529091835022,
+              216.18635858297347,
+              161.3802478313446,
+              252.59427725076677
+            ]
+          }
+        ],
+        "peak": 0.9968639612197876,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              17,
+              29
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9968639612197876,
+            "delta": [
+              0.6620799899101257,
+              -0.4138000011444092,
+              -0.4965599775314331,
+              -0.33103999495506287
+            ],
+            "xyxy_raster": [
+              124.07529091835022,
+              216.18635858297347,
+              161.3802478313446,
+              252.59427725076677
+            ]
+          }
+        ],
+        "peak": 0.9968639612197876,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\bird_geo_01\\mirror.raw",
+      "sha256": "b0c990494d90d5d43e2889ae9b90289d4c528be189321c2e20413160fc45183d",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 4,
+          "max_abs_delta": 3
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 13,
+          "max_abs_delta": 3
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 4,
+          "max_abs_delta": 3
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 175,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 277,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 92,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 16,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 7,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 5,
+          "max_abs_delta": 1
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 593,
+      "max_abs_delta": 3,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              22,
+              25
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9949978590011597,
+            "delta": [
+              -0.16551999747753143,
+              -0.16551999747753143,
+              -0.16551999747753143,
+              -0.24827998876571655
+            ],
+            "xyxy_raster": [
+              159.38883644342422,
+              184.84834856688977,
+              199.24727886915207,
+              221.8639058381319
+            ]
+          }
+        ],
+        "peak": 0.9949978590011597,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              22,
+              25
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9949978590011597,
+            "delta": [
+              -0.16551999747753143,
+              -0.16551999747753143,
+              -0.16551999747753143,
+              -0.24827998876571655
+            ],
+            "xyxy_raster": [
+              159.38883644342422,
+              184.84834856688977,
+              199.24727886915207,
+              221.8639058381319
+            ]
+          }
+        ],
+        "peak": 0.9949978590011597,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\bird_geo_01\\shift_a.raw",
+      "sha256": "60704e7b0508e9ea0ca1a05790e0208312f9792d7f8fe5e2bcaf23d0ed7bff40",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 5,
+          "max_abs_delta": 4
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 1,
+          "max_abs_delta": 3
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 5,
+          "max_abs_delta": 3
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 6,
+          "max_abs_delta": 3
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 192,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 300,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 108,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 12,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 4,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 1,
+          "max_abs_delta": 1
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 634,
+      "max_abs_delta": 4,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              18,
+              24
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9997367262840271,
+            "delta": [
+              -0.9931199550628662,
+              -0.16551999747753143,
+              -0.4965599775314331,
+              -0.5793200135231018
+            ],
+            "xyxy_raster": [
+              125.25586724281311,
+              178.0340285807848,
+              162.5608241558075,
+              212.67822582423688
+            ]
+          },
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              1,
+              24
+            ],
+            "anchor": 0,
+            "classification_softmax": 0.9201691746711731,
+            "delta": [
+              0.6620799899101257,
+              -0.16551999747753143,
+              0.8276000022888184,
+              -1.4069199562072754
+            ],
+            "xyxy_raster": [
+              0.057466840744019976,
+              172.83743196725845,
+              26.961617851257323,
+              217.21605283021927
+            ]
+          }
+        ],
+        "peak": 0.9997367262840271,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              18,
+              24
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9997367262840271,
+            "delta": [
+              -0.9931199550628662,
+              -0.16551999747753143,
+              -0.4965599775314331,
+              -0.5793200135231018
+            ],
+            "xyxy_raster": [
+              125.25586724281311,
+              178.0340285807848,
+              162.5608241558075,
+              212.67822582423688
+            ]
+          },
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              1,
+              24
+            ],
+            "anchor": 0,
+            "classification_softmax": 0.9201691746711731,
+            "delta": [
+              0.6620799899101257,
+              -0.16551999747753143,
+              0.8276000022888184,
+              -1.4069199562072754
+            ],
+            "xyxy_raster": [
+              0.057466840744019976,
+              172.83743196725845,
+              26.961617851257323,
+              217.21605283021927
+            ]
+          }
+        ],
+        "peak": 0.9997367262840271,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        },
+        {
+          "simulator_index": 1,
+          "simple_index": 1,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\bird_geo_01\\shift_b.raw",
+      "sha256": "f9506e1ec781e07b2022bc08c800db3b31d3349e43631dc3c6a73b79b26379f6",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 15,
+          "max_abs_delta": 4
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 1,
+          "max_abs_delta": 4
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 25,
+          "max_abs_delta": 4
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 12,
+          "max_abs_delta": 3
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 6,
+          "max_abs_delta": 3
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 431,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 462,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 126,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 21,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 1102,
+      "max_abs_delta": 4,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              16,
+              26
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9912240505218506,
+            "delta": [
+              -0.9931199550628662,
+              -0.9931199550628662,
+              0.0,
+              -0.24827998876571655
+            ],
+            "xyxy_raster": [
+              107.30834569931031,
+              189.62898469865323,
+              148.5083456993103,
+              226.64454196989536
+            ]
+          }
+        ],
+        "peak": 0.9912240505218506,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              16,
+              26
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9912240505218506,
+            "delta": [
+              -0.9931199550628662,
+              -0.9931199550628662,
+              0.0,
+              -0.24827998876571655
+            ],
+            "xyxy_raster": [
+              107.30834569931031,
+              189.62898469865323,
+              148.5083456993103,
+              226.64454196989536
+            ]
+          }
+        ],
+        "peak": 0.9912240505218506,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\bird_geo_01\\shift_c.raw",
+      "sha256": "d99524377b60ae273ca700e5790d82f92766258f66328cf2966da19e26278f92",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 180,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 180,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              19,
+              26
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9998528957366943,
+            "delta": [
+              -0.33103999495506287,
+              -0.24827998876571655,
+              -0.5793200135231018,
+              -0.4138000011444092
+            ],
+            "xyxy_raster": [
+              136.28983091115953,
+              193.12906460762025,
+              172.98239971399306,
+              228.9393170595169
+            ]
+          },
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              2,
+              26
+            ],
+            "anchor": 1,
+            "classification_softmax": 0.9817208051681519,
+            "delta": [
+              1.5724400281906128,
+              0.16551999747753143,
+              -0.24827998876571655,
+              0.16551999747753143
+            ],
+            "xyxy_raster": [
+              11.622546437382699,
+              190.58814640045165,
+              36.64848875701428,
+              234.8287048816681
+            ]
+          }
+        ],
+        "peak": 0.9998528957366943,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              19,
+              26
+            ],
+            "anchor": 5,
+            "classification_softmax": 0.9998528957366943,
+            "delta": [
+              -0.33103999495506287,
+              -0.24827998876571655,
+              -0.5793200135231018,
+              -0.4138000011444092
+            ],
+            "xyxy_raster": [
+              136.28983091115953,
+              193.12906460762025,
+              172.98239971399306,
+              228.9393170595169
+            ]
+          },
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              2,
+              26
+            ],
+            "anchor": 1,
+            "classification_softmax": 0.9817208051681519,
+            "delta": [
+              1.5724400281906128,
+              0.16551999747753143,
+              -0.24827998876571655,
+              0.16551999747753143
+            ],
+            "xyxy_raster": [
+              11.622546437382699,
+              190.58814640045165,
+              36.64848875701428,
+              234.8287048816681
+            ]
+          }
+        ],
+        "peak": 0.9998528957366943,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        },
+        {
+          "simulator_index": 1,
+          "simple_index": 1,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\bird_geo_01\\zoom_in.raw",
+      "sha256": "ea85aaa98509978c11f60530c0d9d1c1e1ff38b55dcfbc459a3db78c5b15dceb",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 149,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 149,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [],
+        "peak": 0.0001355072745354846,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [],
+        "peak": 0.0001355072745354846,
+        "unmatched": 0
+      },
+      "matches": []
+    },
+    {
+      "path": "C:\\Users\\HeMu\\Desktop\\Sony_Camera_Detection_Models\\debug\\cpu_inputs\\bird_geo_01\\zoom_out.raw",
+      "sha256": "b0942f42f2a1c2004a549b09114ee572d21e163f88f8b7adee6b78e3076ffa3b",
+      "outputs": {
+        "1": {
+          "bytes": 48000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "2": {
+          "bytes": 12000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "3": {
+          "bytes": 3000,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "4": {
+          "bytes": 750,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "5": {
+          "bytes": 270,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "6": {
+          "bytes": 30,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "8": {
+          "bytes": 38400,
+          "different_bytes": 155,
+          "max_abs_delta": 1
+        },
+        "9": {
+          "bytes": 9600,
+          "different_bytes": 300,
+          "max_abs_delta": 1
+        },
+        "10": {
+          "bytes": 2400,
+          "different_bytes": 103,
+          "max_abs_delta": 1
+        },
+        "11": {
+          "bytes": 600,
+          "different_bytes": 11,
+          "max_abs_delta": 1
+        },
+        "12": {
+          "bytes": 216,
+          "different_bytes": 2,
+          "max_abs_delta": 1
+        },
+        "13": {
+          "bytes": 24,
+          "different_bytes": 3,
+          "max_abs_delta": 1
+        },
+        "15": {
+          "bytes": 9600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "16": {
+          "bytes": 2400,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "17": {
+          "bytes": 600,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "18": {
+          "bytes": 150,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "19": {
+          "bytes": 54,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        },
+        "20": {
+          "bytes": 6,
+          "different_bytes": 0,
+          "max_abs_delta": 0
+        }
+      },
+      "total_bytes": 128100,
+      "different_bytes": 574,
+      "max_abs_delta": 1,
+      "simulator": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              18,
+              24
+            ],
+            "anchor": 2,
+            "classification_softmax": 0.9378459453582764,
+            "delta": [
+              0.08275999873876572,
+              -0.9931199550628662,
+              -1.1586400270462036,
+              0.0
+            ],
+            "xyxy_raster": [
+              135.57424208521843,
+              175.8031858444214,
+              160.95542189478874,
+              209.50318584442138
+            ]
+          }
+        ],
+        "peak": 0.9378459453582764,
+        "unmatched": 0
+      },
+      "simple": {
+        "boxes": [
+          {
+            "slot": 8,
+            "label": "Bird",
+            "class_index": 1,
+            "grid_xy": [
+              18,
+              24
+            ],
+            "anchor": 2,
+            "classification_softmax": 0.9378459453582764,
+            "delta": [
+              0.08275999873876572,
+              -0.9931199550628662,
+              -1.1586400270462036,
+              0.0
+            ],
+            "xyxy_raster": [
+              135.57424208521843,
+              175.8031858444214,
+              160.95542189478874,
+              209.50318584442138
+            ]
+          }
+        ],
+        "peak": 0.9378459453582764,
+        "unmatched": 0
+      },
+      "matches": [
+        {
+          "simulator_index": 0,
+          "simple_index": 0,
+          "iou": 1.0,
+          "max_edge_shift_px": 0.0,
+          "score_abs_delta": 0.0
+        }
+      ]
+    }
+  ],
+  "forward_ms_first_input": {
+    "simulator": {
+      "median": 20.90907211303711,
+      "samples": [
+        24.96202392578125,
+        20.832377624511718,
+        20.88670654296875,
+        20.845297241210936,
+        20.931437683105468,
+        21.2247314453125
+      ]
+    },
+    "simple": {
+      "median": 21.284269714355467,
+      "samples": [
+        21.19768524169922,
+        21.37085418701172,
+        22.617080688476562,
+        20.871974182128906,
+        23.04796600341797,
+        21.038662719726563
+      ]
+    }
+  }
+}

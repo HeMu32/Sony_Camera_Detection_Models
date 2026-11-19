@@ -1,0 +1,17 @@
+{
+  "input_size": [
+    320,
+    320
+  ],
+  "layout": "rgb_chw",
+  "sources": {
+    "Flight_DSC02983.raw": "02de86012bd3d68d57b153c0ca38d761a6353c8055a33fad2a4b57dbd41a0466",
+    "Bird_DSC02510.raw": "261275531d6fbe0eaa261cbe42e62cc52950fc8c08fefdd6b4eb82803580e879"
+  },
+  "bird_shift_y": 32,
+  "blend_rows": [
+    207,
+    212
+  ],
+  "sha256": "81ca3ac2538c7f4a4844522bb65758b01bf42da4b3c30b9684458b25b652bdfd"
+}

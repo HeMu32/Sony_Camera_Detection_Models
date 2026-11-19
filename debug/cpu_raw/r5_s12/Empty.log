@@ -1,0 +1,36 @@
+Galcore warning: MMU is disabled!
+DW Enhancement is missing. Conv3x3 enhancement cannot be turned onparam 0 input dtype=0x3 quant=0x2 shape=416x288x3x1 bytes=359424 scale=0.00392156886 zp=0
+param 1 output dtype=0x3 quant=0x2 shape=52x36x40x1 bytes=74880 scale=0.00726852473 zp=127
+param 2 output dtype=0x3 quant=0x2 shape=52x36x19x1 bytes=35568 scale=0.00425675744 zp=8
+graph verified
+Warning: SRAM overlap, inSramStartAddr 0x3e900, inSramEndAddrPlus1 0x43100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x75800 
+Warning: SRAM overlap, inSramStartAddr 0x9d100, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x103700, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x103700, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x9d100, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x9d100, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x103700, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x103700, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x9d100, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x9d100, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x103700, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x103700, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x9d100, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x9d100, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x103700, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x103700, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x9d100, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x9d100, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x103700, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x103700, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x9d100, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x9d100, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x103700, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x103700, inSramEndAddrPlus1 0x136a00 outSramStartAddr 0x9d100, outSramEndAddrPlus1 0x136a00 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x800, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x66e00, outSramEndAddrPlus1 0x9a100 
+Warning: SRAM overlap, inSramStartAddr 0x66e00, inSramEndAddrPlus1 0x9a100 outSramStartAddr 0x800, outSramEndAddrPlus1 0x9a100 
+wrote outputs/r5_s12/Empty.0.raw
+wrote outputs/r5_s12/Empty.1.raw
