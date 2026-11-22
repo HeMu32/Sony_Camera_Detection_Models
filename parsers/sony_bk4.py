@@ -10,6 +10,7 @@ import tarfile
 
 
 COUNTS = Struct("<II")
+DATA_RANGE = Struct("<II")
 ENTRY = Struct("<HI")
 U16 = Struct("<H")
 GROUPS_OFFSET = 0x100
@@ -63,6 +64,23 @@ class Backup:
         return offset, self.data[offset:offset + size]
 
 
+def published_pair(data):
+    """Split a two-image Sony 0110_backup member at its aligned image boundary."""
+    def image_end(start):
+        image = Backup(data[start:])
+        offset, length = DATA_RANGE.unpack_from(data, start + 0x18)
+        end = start + offset + length
+        if not (image.end <= offset and start + offset < end <= len(data)):
+            raise ValueError("invalid published BK4 data range")
+        return end
+
+    end = image_end(0)
+    second = (end + 0xfff) & ~0xfff
+    if second >= len(data) or any(data[end:second]) or image_end(second) != len(data):
+        raise ValueError("invalid published BK4 pair extent")
+    return (0, data[:end]), (second, data[second:])
+
+
 def report(data, keys):
     parsed = Backup(data)
     values = {}
@@ -84,9 +102,13 @@ def main():
     cli.add_argument("source", type=Path, help="BK4 file, or --firmware-tar backup archive")
     cli.add_argument("--key", required=True, action="append", type=lambda s: int(s, 0))
     cli.add_argument("--firmware-tar", action="store_true")
+    cli.add_argument("--segment", choices=("first", "second"), default="first")
     args = cli.parse_args()
     if not args.firmware_tar:
-        print(json.dumps(report(args.source.read_bytes(), args.key), indent=2))
+        data = args.source.read_bytes()
+        if args.segment == "second":
+            _, data = published_pair(data)[1]
+        print(json.dumps(report(data, args.key), indent=2))
         return
     results = Counter()
     examples = {}
@@ -97,11 +119,13 @@ def main():
                 continue
             with tar.extractfile(member) as file:
                 data = file.read()
-            profile = json.dumps(report(data, args.key), sort_keys=True)
+            offset, image = published_pair(data)[1] if args.segment == "second" else (0, data)
+            profile = json.dumps(report(image, args.key), sort_keys=True)
             results[profile] += 1
             if profile not in examples:
                 examples[profile] = {"name": member.name, "archive_offset": hex(member.offset_data),
-                                     "sha256": sha256(data).hexdigest()}
+                                     "sha256": sha256(data).hexdigest(),
+                                     "bk4_member_offset": hex(offset)}
     if not results:
         cli.error("no BK4 members under 0110_backup")
     print(json.dumps([{"member_count": count, "example": examples[profile],

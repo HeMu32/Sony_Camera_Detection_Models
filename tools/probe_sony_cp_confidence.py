@@ -99,6 +99,15 @@ class ConfidenceProbe(CpSlices):
         for offset, value in zip(fields, (base_raw, adjustment_raw)):
             fixture[offset:offset + 2] = pack("<H", value)
         self.machine.mem_write(ptr, bytes(fixture))
+        return self.evaluate_loaded(name, target, sensitivity, xhd_type=xhd_type, part=part)
+
+    def evaluate_loaded(self, name, target, sensitivity, *, xhd_type=0, part=0):
+        """Evaluate without overwriting the tuning RAM."""
+        if name not in GETTER_NAMES or target not in range(len(self.targets)):
+            raise ValueError("unsupported getter or detected-target index")
+        kind = GETTER_NAMES.index(name)
+        fields = self.field_offsets(kind, sensitivity, xhd_type, part)
+        ptr = self.targets[target]
         self.machine.mem_write(STACK, pack("<I", sensitivity))
         third = sensitivity if kind < 2 else xhd_type
         for register, value in zip((UC_ARM_REG_R0, UC_ARM_REG_R1, UC_ARM_REG_R2, UC_ARM_REG_R3,

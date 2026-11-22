@@ -1,0 +1,1022 @@
+[
+  {
+    "file": "00_sony_net_opt.nb",
+    "size": 1254560,
+    "version": "0x0001000d",
+    "header_d4": 212,
+    "name": "sony_net_opt_NHWC",
+    "layer_count": 152,
+    "operation_count": 421,
+    "input_count": 1,
+    "output_count": 2,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048576,
+    "mem_pool_size": 2097152,
+    "vip_sram": 496,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 612,
+        "head32": "04000000400000002a0000002800000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 232,
+        "offset": 844,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 11552,
+        "offset": 12396,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 10104,
+        "offset": 158028,
+        "head32": "000000002800000040000000c006000000070000c0020000c009000040090000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 6704,
+        "offset": 164864,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 1089664,
+        "offset": 22548,
+        "head32": "0a0340e040404805000000b8004040052040000d000000000008000000250900"
+      },
+      {
+        "segment": "load states",
+        "size": 53248,
+        "offset": 75796,
+        "head32": "82000000500103000002000000a0020000000000810051011800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 640,
+        "offset": 76436,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "01_reid.nb",
+    "size": 129120,
+    "version": "0x0001000d",
+    "header_d4": 212,
+    "name": "reid_NHWC",
+    "layer_count": 15,
+    "operation_count": 28,
+    "input_count": 1,
+    "output_count": 1,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048576,
+    "mem_pool_size": 2097152,
+    "vip_sram": 496,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 612,
+        "head32": "0100000040000000010000000100000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 116,
+        "offset": 728,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 1140,
+        "offset": 1868,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 672,
+        "offset": 11936,
+        "head32": "000000002800000040000000c00400000005000080170000801c000080190000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 408,
+        "offset": 12544,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 116544,
+        "offset": 2660,
+        "head32": "0a0340e040080802000000b00008000220408020000000000008000080250200"
+      },
+      {
+        "segment": "load states",
+        "size": 1664,
+        "offset": 4324,
+        "head32": "4000000022000300400000000020000000000000410021001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 2176,
+        "offset": 6500,
+        "head32": "26000000010000001c00000004000000ffffffff000000000000000000000000"
+      }
+    ]
+  },
+  {
+    "file": "02_reidpost.nb",
+    "size": 401184,
+    "version": "0x0001000d",
+    "header_d4": 212,
+    "name": "reidpost_NHWC",
+    "layer_count": 272,
+    "operation_count": 274,
+    "input_count": 16,
+    "output_count": 64,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048576,
+    "mem_pool_size": 2097152,
+    "vip_sram": 496,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 1856,
+        "offset": 2352,
+        "head32": "0100000001000000010000000100000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 7424,
+        "offset": 9776,
+        "head32": "54656e736f72436f707900000000000000000000000000000000000000000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 20672,
+        "offset": 30448,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 6576,
+        "offset": 90716,
+        "head32": "000000002800000040000000c000000000010000c0000000c0010000c0000000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 9552,
+        "offset": 100352,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 300800,
+        "offset": 38224,
+        "head32": "860010e000100800000000b800100800014000030000000000090000000d0000"
+      },
+      {
+        "segment": "load states",
+        "size": 1152,
+        "offset": 39376,
+        "head32": "40000000010001004000000040000000000000003f0000001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 8320,
+        "offset": 47696,
+        "head32": "0c0000000f0000001200000015000000180000001b0000001e00000021000000"
+      }
+    ]
+  },
+  {
+    "file": "03_tfl80.nb",
+    "size": 2348064,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "tfl80_t49_e70_q49_c0_NHWC",
+    "layer_count": 66,
+    "operation_count": 73,
+    "input_count": 1,
+    "output_count": 1,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "020000000d000000010000000100000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 116,
+        "offset": 744,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 5016,
+        "offset": 5760,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 1752,
+        "offset": 54860,
+        "head32": "000000002800000040000000c0050000000600004003000040090000c0020000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 2256,
+        "offset": 57344,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 2290688,
+        "offset": 9216,
+        "head32": "0a0340e0421c8803000000b0001c80032040c009000000000008000000fb1000"
+      },
+      {
+        "segment": "load states",
+        "size": 16512,
+        "offset": 25728,
+        "head32": "3a000000e0000300e000000000c40000000000003900e1001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 1664,
+        "offset": 27392,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "04_model_a.nb",
+    "size": 2546144,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "model_NCHW",
+    "layer_count": 78,
+    "operation_count": 138,
+    "input_count": 2,
+    "output_count": 1,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048576,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 232,
+        "offset": 744,
+        "head32": "0400000040010000b40000000100000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 116,
+        "offset": 860,
+        "head32": "54656e736f72436f707900000000000000000000000000000000000000000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 5928,
+        "offset": 6788,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 3312,
+        "offset": 74704,
+        "head32": "0000000028000000400000004008000080080000c06800004071000000920000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 3056,
+        "offset": 77824,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 2468288,
+        "offset": 11756,
+        "head32": "0a0340e04028d802000000b10028d0024040400d000000000008000000960e00"
+      },
+      {
+        "segment": "load states",
+        "size": 16000,
+        "offset": 27756,
+        "head32": "50000000b40001004001000000e10000000000004f00b3001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 9344,
+        "offset": 37100,
+        "head32": "b100000000000000b700000000000000bc00000000000000c500000000000000"
+      }
+    ]
+  },
+  {
+    "file": "05_model_b.nb",
+    "size": 2574752,
+    "version": "0x0001000d",
+    "header_d4": 212,
+    "name": "model_NCHW",
+    "layer_count": 77,
+    "operation_count": 199,
+    "input_count": 2,
+    "output_count": 1,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048576,
+    "mem_pool_size": 2097152,
+    "vip_sram": 496,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 232,
+        "offset": 728,
+        "head32": "0400000040010000b40000000100000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 116,
+        "offset": 844,
+        "head32": "54656e736f72436f707900000000000000000000000000000000000000000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 5852,
+        "offset": 6696,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 4776,
+        "offset": 71288,
+        "head32": "000000002800000040000000400d0000800d000000710000807e000040900000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 2592,
+        "offset": 73984,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 2500736,
+        "offset": 11592,
+        "head32": "0a0440e040284800000000a90828400040404005000000000008000080d10000"
+      },
+      {
+        "segment": "load states",
+        "size": 10368,
+        "offset": 21960,
+        "head32": "50000000b40001004001000000e10000000000004f00b3001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 14464,
+        "offset": 36424,
+        "head32": "eb000000ee000000f4000000f9000000ff000000080100000b01000012010000"
+      }
+    ]
+  },
+  {
+    "file": "06_aed.nb",
+    "size": 1808992,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "aed_03_00_05_rc2_NHWC",
+    "layer_count": 46,
+    "operation_count": 91,
+    "input_count": 1,
+    "output_count": 4,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0200000003000000010000000100000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 464,
+        "offset": 1092,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 3496,
+        "offset": 4588,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 2184,
+        "offset": 50792,
+        "head32": "000000002800000040000000401100008011000000e8000080f9000080fc0000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 1936,
+        "offset": 52736,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 1756224,
+        "offset": 7924,
+        "head32": "0a0340e042100802000000b0001000025a400011000000000008000000810200"
+      },
+      {
+        "segment": "load states",
+        "size": 9088,
+        "offset": 17012,
+        "head32": "2200000080000300800000000040000000000000210081001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 8320,
+        "offset": 25332,
+        "head32": "6000000000000000010000001c00000004000000ffffffff0000000000000000"
+      }
+    ]
+  },
+  {
+    "file": "07_dummy7.nb",
+    "size": 3978400,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "dummy_network_name",
+    "layer_count": 87,
+    "operation_count": 162,
+    "input_count": 1,
+    "output_count": 21,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0400000001000000010000000600000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 2436,
+        "offset": 3064,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 6612,
+        "offset": 9676,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000200000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 3888,
+        "offset": 93800,
+        "head32": "0000000028000000400000004005000080050000c02300004029000000240000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 3376,
+        "offset": 97280,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 3881088,
+        "offset": 15868,
+        "head32": "ce0040e0025010003f0000b4005008002040c303000000000000000000080000"
+      },
+      {
+        "segment": "load states",
+        "size": 17792,
+        "offset": 33660,
+        "head32": "280000000a001e00280000004006000000000000270009001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 14976,
+        "offset": 48636,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "08_dummy8.nb",
+    "size": 4164896,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "dummy_network_name",
+    "layer_count": 90,
+    "operation_count": 159,
+    "input_count": 1,
+    "output_count": 21,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0400000050000000500000002a00000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 2436,
+        "offset": 3064,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 6840,
+        "offset": 9904,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000200000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 3816,
+        "offset": 95116,
+        "head32": "00000000280000004000000040050000800500000024000080290000c0230000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 3504,
+        "offset": 98816,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 4066048,
+        "offset": 16144,
+        "head32": "ce0040e0025010003f0000d0005008002040c303000000000000000000080000"
+      },
+      {
+        "segment": "load states",
+        "size": 19072,
+        "offset": 35216,
+        "head32": "50000000500002005000000000190000000000004f004f00180000e800000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 13952,
+        "offset": 49168,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "09_dummy9.nb",
+    "size": 4028000,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "dummy_network_name",
+    "layer_count": 97,
+    "operation_count": 184,
+    "input_count": 1,
+    "output_count": 21,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0400000050000000500000001200000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 2436,
+        "offset": 3064,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 7372,
+        "offset": 10436,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000200000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 4416,
+        "offset": 104216,
+        "head32": "0000000028000000400000004005000080050000c0240000402a000000240000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 3728,
+        "offset": 108032,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 3919936,
+        "offset": 17348,
+        "head32": "ce0040e0025010003f0000b4005008002040c303000000000000000000080000"
+      },
+      {
+        "segment": "load states",
+        "size": 19072,
+        "offset": 36420,
+        "head32": "140000005000120050000000001900000000000013004f001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 17536,
+        "offset": 53956,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "10_dummy10.nb",
+    "size": 4064736,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "dummy_network_name",
+    "layer_count": 83,
+    "operation_count": 134,
+    "input_count": 1,
+    "output_count": 21,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0400000050000000500000002a00000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 2436,
+        "offset": 3064,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 6308,
+        "offset": 9372,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000200000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 3216,
+        "offset": 86016,
+        "head32": "0000000028000000400000004005000080050000002400008029000080230000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 3280,
+        "offset": 89344,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 3975360,
+        "offset": 14940,
+        "head32": "ce0040e0025010003f0000c0005008002040c303000000000000000000080000"
+      },
+      {
+        "segment": "load states",
+        "size": 19072,
+        "offset": 34012,
+        "head32": "50000000500002005000000000190000000000004f004f00180000e800000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 10368,
+        "offset": 44380,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "11_ckpt416.nb",
+    "size": 1302944,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "model.ckpt-1590000_416x288_NHWC",
+    "layer_count": 139,
+    "operation_count": 271,
+    "input_count": 1,
+    "output_count": 2,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0400000034000000240000002800000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 232,
+        "offset": 860,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 10564,
+        "offset": 11424,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 6504,
+        "offset": 180700,
+        "head32": "000000002800000040000000c006000000070000c0020000c009000000080000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 7520,
+        "offset": 188416,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 1114496,
+        "offset": 23280,
+        "head32": "0a0340e040348804000000bc003480042040a007000000000008000000c70f00"
+      },
+      {
+        "segment": "load states",
+        "size": 56192,
+        "offset": 79472,
+        "head32": "6a00000020010300a001000000d4010000000000690021011800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 6784,
+        "offset": 86256,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "12_ckpt416r.nb",
+    "size": 1294368,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "model.ckpt-1590000_416x288_r_NHWC",
+    "layer_count": 139,
+    "operation_count": 260,
+    "input_count": 1,
+    "output_count": 2,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0400000024000000340000002800000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 232,
+        "offset": 860,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 10564,
+        "offset": 11424,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 6240,
+        "offset": 173100,
+        "head32": "000000002800000040000000c006000000070000c0020000c009000000080000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 7168,
+        "offset": 180480,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 1113856,
+        "offset": 22752,
+        "head32": "0a0340e040248806000000bc0024800620402009000000000008000000f41000"
+      },
+      {
+        "segment": "load states",
+        "size": 53376,
+        "offset": 76128,
+        "head32": "200100006a0003002001000000d4010000000000210169001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 6784,
+        "offset": 82912,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  },
+  {
+    "file": "13_tflite_resnet.nb",
+    "size": 131872,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "tflite_djd5-U-resnet7-32_64-esch_lw_quan_max23_NHWC",
+    "layer_count": 16,
+    "operation_count": 27,
+    "input_count": 1,
+    "output_count": 1,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0100000040000000010000000100000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 116,
+        "offset": 744,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 1216,
+        "offset": 1960,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 648,
+        "offset": 16904,
+        "head32": "000000002800000040000000c00400000005000040170000401c0000801a0000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 664,
+        "offset": 17664,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 114176,
+        "offset": 3088,
+        "head32": "0a0340e040040801000000b00004000120404020000000000008000000cc0000"
+      },
+      {
+        "segment": "load states",
+        "size": 3456,
+        "offset": 6544,
+        "head32": "2000000012000300200000000008000000000000210011001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 2176,
+        "offset": 8720,
+        "head32": "2600000000000000010000001c00000004000000ffffffff0000000000000000"
+      }
+    ]
+  },
+  {
+    "file": "14_sfr_resnet.nb",
+    "size": 1377792,
+    "version": "0x0001000f",
+    "header_d4": 212,
+    "name": "sfr_tf_resnet_454-80-160-320-512-nose_NHWC",
+    "layer_count": 71,
+    "operation_count": 89,
+    "input_count": 1,
+    "output_count": 1,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048320,
+    "mem_pool_size": 2097152,
+    "vip_sram": 512,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 628,
+        "head32": "0200000000020000010000000100000001000000010000000100000003000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 116,
+        "offset": 744,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 5396,
+        "offset": 6140,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000200000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 2136,
+        "offset": 60672,
+        "head32": "000000002800000040000000400a0000800a0000c00600004011000000130000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 2448,
+        "offset": 63232,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 1314560,
+        "offset": 10004,
+        "head32": "ce0080e0021000023f0000b50010000240400309000000000000000000080000"
+      },
+      {
+        "segment": "load states",
+        "size": 17536,
+        "offset": 27540,
+        "head32": "4000000040000500400000000010000000000000410041001800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 2688,
+        "offset": 30228,
+        "head32": "9c00000000000000010000001c00000004000000ffffffff0000000000000000"
+      }
+    ]
+  }
+]

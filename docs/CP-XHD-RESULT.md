@@ -26,8 +26,9 @@
 
 在 48 个原指令对照中验证了多条记录、0/50 条边界、四种正交旋转、
 裁剪、类型回退和小框清分；另外两机均对 `51` 条进入拒绝分支。
-仍缺从 NBG 输出张量到这 12 字节记录的原厂解码，未用合成记录
-冒充照片框或跨类型 Auto 调度证据。
+最初这些测试只给 CP 注入合成记录。槽 8、10 现已由
+[Adam 原 ARM 解码](ADAM-XHD.md) 从真实张量生成该格式；
+分别启动两图再合并结果仍不是跨类型 Auto 调度证据。
 
 ```powershell
 & 'E:/anaconda3/envs/test311/python.exe' -B -m unittest discover -s tools -p 'test_sony_cp_xhd_result.py' -v

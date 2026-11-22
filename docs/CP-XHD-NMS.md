@@ -29,8 +29,26 @@ A7R V 可在文件偏移 `0x1b8944/4c`、`0x1b89a0/aa`、
 框和分数的格式见 [CP XHD 结果转换](CP-XHD-RESULT.md)。
 
 下列回归在两机原指令上验证散布规则、未覆盖的字节、布尔化和
-地址加法。测试中的阈值是显式夹具；实际配置的数值、解码所用先验、
-选择器 `3` 与可执行成员的绑定和作业内的 NMS 行为均尚未验证。
+地址加法。后续已将短作业绑定到 [原始 Adam CPU 解码](ADAM-XHD.md)，
+并在槽 8、10 的实图张量上运行。发布包的默认值见下文，和实机运行时
+覆盖以及显式夹具分开。
+
+### 调用者与日志读者
+
+用显式栈和 `AdamXhdDriver` 虚表夹具回放，两机的区域设置代码都通过
+虚表 `+8` 调用原描述符构造方法。调用者传入工作区 `+4`，
+然后把返回的数量记入 `+0`。紧接的调试转储从同一工作区
+按 `8` 字节步长读三个字段。对短表与长表，读出的元组都与上表相同。
+
+| 原始 CP 文件偏移 | A7R V | A1 II |
+|---|---|---|
+| 间接调用 | `0x1ba778` | `0x1f1dd2` |
+| 写入数量 | `0x1ba7ac` | `0x1f1dfc` |
+| 读操作号、选择器、指针 | `0x1ba88e/90/92` | `0x1f1f18/1a/1c` |
+
+该 CP 切片只验证区域设置代码中的交接，不执行日志或提交作业。
+Adam 应用的实际收件端以第一个半字 `0x10` 查控制器，再把第二个半字 `3`
+作为控制器操作号传入；它不是 SA 引擎编号。详见 [Adam XHD](ADAM-XHD.md)。
 
 ## 配置来源
 
@@ -49,9 +67,28 @@ A7R V 可在文件偏移 `0x1b8944/4c`、`0x1b89a0/aa`、
 
 两机的批量配置表都把五块依次配到 BK4 的 `0x00060011..0x00060015`。
 A7R V 的读取器于 `0x532f12..0x532f1a` 把对应指针传给
-`0xba7bac`，该函数查 BK4 索引并复制命中数据。A7R V 和 A1 II
-发布包内的 `0110_backup` 各有 12 个 BK4，均没有命名空间 `0x0006`；
-该负结果仅限这些发布备份，不能推出相机不会另行提供它。
+`0xba7bac`，该函数查 BK4 索引并复制命中数据；A1 II 对应
+函数 `0xc7ffe6`。
+
+### 发布默认值
+
+每个 `0110_backup` 成员包含两段完整 BK4。第一段确实没有
+命名空间 `0x0006`；第二段从 `align4KiB(u32[+0x18] + u32[+0x1c])`
+开始。A7R V 的成员偏移为 `0xef000`，A1 II 为 `0x100000`。
+已检查每机全部 12 个成员：第二段均有 `0x00060011..0x00060015`，
+每条 `0x600` 字节，同机各地区逐字节一致。
+
+`--published-backup` 执行原始读取器，将整条记录复制到原 RAM 地址，
+再执行原 NMS 参数构造。用 `ALLLANG` 成员核对了以下组合。
+`thr/thr_per` 仅列出在对应非空行里写入的元素。数字是原始整数，
+不是宿主实验解码器的概率阈值。`target` 和 `driver` 在回放中显式选取，
+不据此确认相机菜单或运行时覆盖。
+
+| CP / 组合 | BK4 键 | NMS 行 | `thr` / `thr_per` | `thr_glbl` / `bgfg_thr` / 短边字节 / `skip` |
+|---|---|---:|---|---|
+| 两机，目标 1、驱动 8 | `0x60011` | 0、1 | 每行 `128,128,0,0` / `76,76,76,76` | `229 / 129 / 18 / 1` |
+| A7R V，目标 4、驱动 10 | `0x60013` | 7 | `128,218` / `76,76` | `229 / 129 / 9 / 0` |
+| A1 II，目标 4、驱动 10 | `0x60013` | 7 | `128,128` / `76,76` | `229 / 129 / 9 / 0` |
 
 用已有 FDAT 提取器读取本地 A7R V 4.00 发布包
 `firmware/CamFw/7RM5_v400_BODYDATA.DAT`，输入 SHA-256
@@ -68,5 +105,6 @@ A7R V 另有配置序列化分支同时读取 `+0x186` 和 `+0x187`；
 ```powershell
 & 'E:/anaconda3/envs/test311/python.exe' -B -m unittest discover -s tools -p 'test_sony_cp_xhd_nms.py' -v
 & 'E:/anaconda3/envs/test311/python.exe' -B tools/probe_sony_cp_xhd_nms.py extracted/r5/cp/cpapp-b.bin --tuning-bindings
-& 'E:/anaconda3/envs/test311/python.exe' -B parsers/sony_bk4.py debug/r5_xhd_fw/firmware.tar --firmware-tar --key 0x60011 --key 0x60012 --key 0x60013 --key 0x60014 --key 0x60015
+& 'E:/anaconda3/envs/test311/python.exe' -B parsers/sony_bk4.py debug/r5_xhd_fw/firmware.tar --firmware-tar --segment second --key 0x60011 --key 0x60012 --key 0x60013 --key 0x60014 --key 0x60015
+& 'E:/anaconda3/envs/test311/python.exe' -B tools/probe_sony_cp_xhd_nms.py extracted/r5/cp/cpapp-b.bin --published-backup debug/r5_xhd_fw/firmware.tar --backup-member 0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin --target 4 --driver-id 10
 ```

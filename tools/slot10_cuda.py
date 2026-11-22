@@ -40,6 +40,23 @@ def output_specs(model):
     return specs
 
 
+def run_heads(block, rgb_chw):
+    shared = block(3, rgb_chw, 32, 3)
+    for shape, pool, sites in BLOCKS[:7]:
+        cmd = sites[0][0]
+        shared = block(cmd, shared, shape[0], shape[-1], pool=pool and cmd != 16)
+    small = None
+    for scale in SCALES:
+        if scale.grid == 3:
+            small = shared_tail(block, shared, first=58)
+        feed = shared if small is None else small[scale.grid]
+        shared, cls, reg, aux = compute_branches(
+            block, feed, scale, class_channels=18,
+            transition_channels=64 if scale.grid == 40 else 128,
+        )
+        yield scale, cls, reg, aux
+
+
 class Slot10(PackedModel):
     model_hash = MODEL_HASH
     commands = COMMANDS
@@ -48,20 +65,7 @@ class Slot10(PackedModel):
     def heads(self, rgb_chw):
         if rgb_chw.shape != (3, 320, 320) or rgb_chw.dtype != torch.uint8:
             raise ValueError("expected a 3x320x320 planar uint8 RGB tensor")
-        shared = self.block(3, rgb_chw.cuda(), 32, 3)
-        for shape, pool, sites in BLOCKS[:7]:
-            cmd = sites[0][0]
-            shared = self.block(cmd, shared, shape[0], shape[-1], pool=pool and cmd != 16)
-        small = None
-        for scale in SCALES:
-            if scale.grid == 3:
-                small = shared_tail(self.block, shared, first=58)
-            feed = shared if small is None else small[scale.grid]
-            shared, cls, reg, aux = compute_branches(
-                self.block, feed, scale, class_channels=18,
-                transition_channels=64 if scale.grid == 40 else 128,
-            )
-            yield scale, cls, reg, aux
+        return run_heads(self.block, rgb_chw.cuda())
 
     @torch.inference_mode()
     def infer(self, rgb_chw):

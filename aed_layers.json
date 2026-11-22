@@ -1,0 +1,296 @@
+[
+  {
+    "off": "0x444",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 0,
+    "kernel": 2,
+    "stride": 2
+  },
+  {
+    "off": "0x490",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 1,
+    "kernel": 1,
+    "stride": 6
+  },
+  {
+    "off": "0x4dc",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 2,
+    "kernel": 1,
+    "stride": 7
+  },
+  {
+    "off": "0x528",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 3,
+    "kernel": 1,
+    "stride": 9
+  },
+  {
+    "off": "0x574",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 4,
+    "kernel": 1,
+    "stride": 11
+  },
+  {
+    "off": "0x5c0",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 5,
+    "kernel": 1,
+    "stride": 13
+  },
+  {
+    "off": "0x60c",
+    "type": "PoolingLayer2",
+    "id": 6,
+    "kernel": 1,
+    "stride": 15
+  },
+  {
+    "off": "0x658",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 7,
+    "kernel": 1,
+    "stride": 16
+  },
+  {
+    "off": "0x6a4",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 8,
+    "kernel": 1,
+    "stride": 18
+  },
+  {
+    "off": "0x6f0",
+    "type": "PoolingLayer2",
+    "id": 9,
+    "kernel": 1,
+    "stride": 20
+  },
+  {
+    "off": "0x73c",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 10,
+    "kernel": 1,
+    "stride": 21
+  },
+  {
+    "off": "0x788",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 11,
+    "kernel": 1,
+    "stride": 23
+  },
+  {
+    "off": "0x7d4",
+    "type": "PoolingLayer2",
+    "id": 12,
+    "kernel": 1,
+    "stride": 25
+  },
+  {
+    "off": "0x820",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 13,
+    "kernel": 1,
+    "stride": 26
+  },
+  {
+    "off": "0x86c",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 14,
+    "kernel": 1,
+    "stride": 28
+  },
+  {
+    "off": "0x8b8",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 15,
+    "kernel": 1,
+    "stride": 30
+  },
+  {
+    "off": "0x904",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 16,
+    "kernel": 1,
+    "stride": 31
+  },
+  {
+    "off": "0x950",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 17,
+    "kernel": 1,
+    "stride": 33
+  },
+  {
+    "off": "0x99c",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 18,
+    "kernel": 1,
+    "stride": 35
+  },
+  {
+    "off": "0x9e8",
+    "type": "FullyConnectedReluLayer",
+    "id": 19,
+    "kernel": 1,
+    "stride": 36
+  },
+  {
+    "off": "0xa34",
+    "type": "FullyConnectedReluLayer",
+    "id": 20,
+    "kernel": 1,
+    "stride": 38
+  },
+  {
+    "off": "0xa80",
+    "type": "FullyConnectedReluLayer",
+    "id": 21,
+    "kernel": 1,
+    "stride": 40
+  },
+  {
+    "off": "0xb18",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 23,
+    "kernel": 1,
+    "stride": 42
+  },
+  {
+    "off": "0xbb0",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 25,
+    "kernel": 1,
+    "stride": 50
+  },
+  {
+    "off": "0xbfc",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 26,
+    "kernel": 1,
+    "stride": 51
+  },
+  {
+    "off": "0xc94",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 28,
+    "kernel": 1,
+    "stride": 59
+  },
+  {
+    "off": "0xce0",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 29,
+    "kernel": 1,
+    "stride": 60
+  },
+  {
+    "off": "0xd78",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 31,
+    "kernel": 1,
+    "stride": 68
+  },
+  {
+    "off": "0xdc4",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 32,
+    "kernel": 1,
+    "stride": 69
+  },
+  {
+    "off": "0xe10",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 33,
+    "kernel": 1,
+    "stride": 71
+  },
+  {
+    "off": "0xe5c",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 34,
+    "kernel": 1,
+    "stride": 73
+  },
+  {
+    "off": "0xea8",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 35,
+    "kernel": 1,
+    "stride": 75
+  },
+  {
+    "off": "0xef4",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 36,
+    "kernel": 1,
+    "stride": 77
+  },
+  {
+    "off": "0xf40",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 37,
+    "kernel": 1,
+    "stride": 79
+  },
+  {
+    "off": "0xf8c",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 38,
+    "kernel": 2,
+    "stride": 81
+  },
+  {
+    "off": "0xfd8",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 39,
+    "kernel": 2,
+    "stride": 85
+  },
+  {
+    "off": "0x1024",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 40,
+    "kernel": 1,
+    "stride": 86
+  },
+  {
+    "off": "0x1070",
+    "type": "FullyConnectedReluLayer",
+    "id": 41,
+    "kernel": 1,
+    "stride": 87
+  },
+  {
+    "off": "0x10bc",
+    "type": "FullyConnectedReluLayer",
+    "id": 42,
+    "kernel": 1,
+    "stride": 89
+  },
+  {
+    "off": "0x1108",
+    "type": "FullyConnectedReluLayer",
+    "id": 43,
+    "kernel": 1,
+    "stride": 91
+  },
+  {
+    "off": "0x1154",
+    "type": "ActivationLayer",
+    "id": 44,
+    "kernel": 1,
+    "stride": 92
+  },
+  {
+    "off": "0x11a0",
+    "type": "ConvolutionReluPoolingLayer2",
+    "id": 45,
+    "kernel": 1,
+    "stride": 4294967295
+  }
+]

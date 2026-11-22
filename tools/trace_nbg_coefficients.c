@@ -8,7 +8,9 @@
 #include <string.h>
 
 static FILE *stream;
-static unsigned operations, limit, tile_limit;
+static FILE *instructions;
+static unsigned operations, limit, tile_limit, post_limit;
+static bool parameters_only, depthwise_taps;
 static _Thread_local unsigned active;
 static _Thread_local unsigned remaining;
 static _Thread_local unsigned tiles;
@@ -56,10 +58,29 @@ static void open_trace(void)
         exit(1);
     }
     tile_limit = (unsigned)n;
+    value = getenv("NBG_CONV_TRACE_POST_SAMPLES");
+    n = value ? strtoul(value, NULL, 10) : 512;
+    if (!n || n > 512) {
+        fputs("NBG_CONV_TRACE_POST_SAMPLES must be 1..512\n", stderr);
+        exit(1);
+    }
+    post_limit = (unsigned)n;
+    const char *params = getenv("NBG_COEFF_PARAMS_ONLY");
+    parameters_only = params && !strcmp(params, "1");
+    const char *depthwise = getenv("NBG_POSE_DEPTHWISE_TAPS");
+    depthwise_taps = depthwise && !strcmp(depthwise, "1");
     stream = fopen(path, "wbx");
     if (!stream || fwrite("NBCOEF1\0", 8, 1, stream) != 1) {
         perror("open coefficient trace");
         exit(1);
+    }
+    const char *commands = getenv("NBG_NN_COMMANDS");
+    if (commands && *commands) {
+        instructions = fopen(commands, "wbx");
+        if (!instructions || fwrite("NBNNC01\0", 8, 1, instructions) != 1) {
+            perror("open NN command trace");
+            exit(1);
+        }
     }
 }
 
@@ -84,6 +105,23 @@ bool _ZN12cmoNeuralNet11DoNeuralNetEj(void *self, unsigned address)
         active = 0;
     }
     return result;
+}
+
+void _ZN12cmoNeuralNet9GetNnInstEj(unsigned char *self, unsigned index)
+{
+    static void (*original)(unsigned char *, unsigned);
+    if (!original)
+        original = require_symbol(__func__);
+    original(self, index);
+    if (active && instructions) {
+        const uint32_t header[] = {active, index};
+        /* GetNnInst loads 32 command words at object offset 0x2718. */
+        if (fwrite(header, sizeof(header), 1, instructions) != 1 ||
+            fwrite(self + 0x2718, 0x80, 1, instructions) != 1) {
+            perror("NN command trace");
+            exit(1);
+        }
+    }
 }
 
 void _ZN12cmoNeuralNet11SetCoefDataEjjjjs(void *self, unsigned x, unsigned y,
@@ -114,6 +152,17 @@ void _ZN12cmoNeuralNet11SetCoefDataEjjjjshh(void *self, unsigned x, unsigned y,
     original(self, x, y, z, k, value, flag, lane);
 }
 
+void _ZN12cmoNeuralNet21SetDepthwiseVZReorderEtt(void *self, unsigned short logical,
+                                                unsigned short kernel)
+{
+    static void (*original)(void *, unsigned short, unsigned short);
+    if (!original)
+        original = require_symbol(__func__);
+    original(self, logical, kernel);
+    if (active && depthwise_taps)
+        emit(10, logical, kernel, 0, 0, 0, 0, 0);
+}
+
 static uint32_t get_word(const unsigned char *self, size_t offset)
 {
     uint32_t word;
@@ -121,12 +170,58 @@ static uint32_t get_word(const unsigned char *self, size_t offset)
     return word;
 }
 
+void _ZN12cmoNeuralNet10SetVipSramEv(unsigned char *self)
+{
+    static void (*original)(unsigned char *);
+    if (!original)
+        original = require_symbol(__func__);
+    original(self);
+    const char *path = active == 1 ? getenv("NBG_POSE_STEM_SRAM") : NULL;
+    if (!path || !*path)
+        return;
+
+    /* Snapshot the known model's input region after the four TP stripes. */
+    const unsigned start = 0x800, output_base = get_word(self, 0x8b4);
+    if (get_word(self, 0x8ac) != 0x400800 ||
+        (output_base != 0x459b00 && output_base != 0x4fc700 && output_base != 0x492500)) {
+        fputs("Unexpected pose stem SRAM address\n", stderr);
+        exit(1);
+    }
+    const unsigned end = output_base - 0x400000;
+    unsigned char *owner, *sram;
+    memcpy(&owner, self + 0x778, sizeof(owner));
+    if (!owner) {
+        fputs("Missing pose stem SRAM owner\n", stderr);
+        exit(1);
+    }
+    memcpy(&sram, owner + 8, sizeof(sram));
+    if (!sram || get_word(sram, 0x21c) < end) {
+        fputs("Unexpected pose stem SRAM size\n", stderr);
+        exit(1);
+    }
+    void (*read_data)(void *, unsigned, unsigned, unsigned char *) =
+        require_symbol("_ZN10cmoVipSram14DirectReadDataEjjPh");
+    unsigned char *data = malloc(end - start);
+    FILE *file = fopen(path, "wbx");
+    if (!data || !file) {
+        perror("pose stem SRAM trace");
+        exit(1);
+    }
+    read_data(sram, start, end - start, data);
+    if (fwrite(data, end - start, 1, file) != 1 || fclose(file) != 0) {
+        perror("pose stem SRAM trace");
+        exit(1);
+    }
+    free(data);
+}
+
 void _ZN12cmoNeuralNet11PostAddBiasEv(unsigned char *self)
 {
     static void (*original)(unsigned char *);
     if (!original)
         original = require_symbol(__func__);
-    if (active && tile_limit && (self[0x270e] == 0 || self[0x270e] == 2)) {
+    if (active && (tile_limit || parameters_only) &&
+        (self[0x270e] == 0 || self[0x270e] == 2)) {
         const int64_t *bias;
         memcpy(&bias, self + 0x27d8, sizeof(bias));
         if (bias) {
@@ -146,11 +241,14 @@ void _ZN12cmoNeuralNet22UpdatePostMultAndShiftEt(unsigned char *self, unsigned s
     if (!original)
         original = require_symbol(__func__);
     original(self, channel);
-    if (active && tile_limit) {
+    if (active && (tile_limit || parameters_only)) {
         post_channel = channel;
-        if (channel < 512 && !post_count[channel])
+        if (channel < 512 && !post_count[channel]) {
             emit(7, channel, get_word(self, 0x2850), get_word(self, 0x2854),
                  get_word(self, 0x5dac), self[0x5daa], self[0x2771], self[0x276b]);
+            if (parameters_only)
+                post_count[channel] = 1;
+        }
     }
 }
 
@@ -160,7 +258,8 @@ int _ZN12cmoNeuralNet16PostProcessAccumExx(unsigned char *self, int64_t a, int64
     if (!original)
         original = require_symbol(__func__);
     int value = original(self, a, b);
-    if (active && tile_limit && post_channel < 512 && post_count[post_channel] < 512) {
+    if (active && tile_limit && !parameters_only &&
+        post_channel < 512 && post_count[post_channel] < post_limit) {
         uint64_t input = (uint64_t)a, skip = (uint64_t)b;
         emit(8, post_channel, (uint32_t)input, (uint32_t)(input >> 32),
              (uint32_t)skip, (uint32_t)(skip >> 32), (uint32_t)value, 0);
@@ -175,7 +274,7 @@ void _ZN12cmoNeuralNet10OutputDataEjjji(void *self, unsigned x, unsigned y,
     static void (*original)(void *, unsigned, unsigned, unsigned, int);
     if (!original)
         original = require_symbol(__func__);
-    if (active && tile_limit && channel < 512 && output_count[channel] < 512) {
+    if (active && tile_limit && !parameters_only && channel < 512 && output_count[channel] < post_limit) {
         emit(9, channel, x, y, (uint32_t)value, 0, 0, 0);
         ++output_count[channel];
     }
@@ -195,8 +294,8 @@ void _ZN12cmoNeuralNet9conv_int8EttthhttPA64_cPs15_Int16ConvStagej(
     static int64_t (*get_accum)(void *, unsigned, unsigned, unsigned);
     if (!original)
         original = require_symbol(__func__);
-    if (!active || tiles >= tile_limit || stage || !taps || taps > 9 || !width ||
-        (self[0x2795] & 0x80) || (self[0x2772] & 2) ||
+    if (!active || parameters_only || tiles >= tile_limit || stage || !taps || taps > 9 || !width ||
+        (self[0x2795] & 0x80) || ((self[0x2772] & 2) && !depthwise_taps) ||
         (self[0x270e] != 0 && self[0x270e] != 2)) {
         original(self, start, x0, y0, width, height, taps, channel,
                  input, weight, stage, flags);

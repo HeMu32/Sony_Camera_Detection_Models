@@ -64,13 +64,13 @@ def checked_block(rows, checks, cmd, x, channels, kernel, *, relu=True, zp=0, pa
 def shared_tail(block, x, first=53):
     x = block(first, x, 128, 1)
     levels = {}
-    for cmd, start in ((first + 1, 1), (first + 3, 1), (first + 5, 0)):
+    for cmd, start, grid in ((first + 1, 1, 3), (first + 3, 1, 2), (first + 5, 0, 1)):
         # Raw TP pads the leading edge for odd spatial dimensions, then packs
         # each 2x2 block as four phases for every original channel.
         padded = F.pad(x[None], (start, 2, start, 2), value=0)
         packed = F.pixel_unshuffle(padded, 2)[0]
         h = block(cmd, packed, 256, 2, padding=(0, 0, 0, 0))
-        levels[h.shape[-1]] = h
+        levels[grid] = h
         if cmd != first + 5:
             x = block(cmd + 1, h, 128, 1)
     return levels

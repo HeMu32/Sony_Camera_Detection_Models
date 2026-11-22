@@ -1,7 +1,7 @@
 from struct import pack_into
 import unittest
 
-from parsers.sony_bk4 import Backup
+from parsers.sony_bk4 import Backup, published_pair
 
 
 def sample():
@@ -36,3 +36,12 @@ class SonyBackupTest(unittest.TestCase):
         pack_into("<I", data, 0x114, 0xff00013f)
         with self.assertRaisesRegex(ValueError, "truncated"):
             Backup(data).lookup(0x10000)
+
+    def test_published_pair_uses_aligned_declared_extent(self):
+        segment = sample()
+        pack_into("<2I", segment, 0x18, 0x130, len(segment) - 0x130)
+        data = bytes(segment) + bytes(0x1000 - len(segment)) + segment
+        self.assertEqual(published_pair(data), ((0, segment), (0x1000, segment)))
+        for invalid in (data + b"\0", data[:-1], bytes(segment) + b"\1" + data[len(segment) + 1:]):
+            with self.assertRaises(ValueError):
+                published_pair(invalid)

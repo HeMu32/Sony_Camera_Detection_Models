@@ -1,0 +1,373 @@
+[
+  {
+    "na_file_name": "AAAAAAI.nab",
+    "rsc_file_name": "AAAAAAI.rsc",
+    "icon_tar_file_name": "AAAAAAI.tar",
+    "dov_file_name": "AAAAAAI.dov",
+    "ai_model_id": "AAAAAAI",
+    "ai_model_id_number": 1,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 0,
+    "ai_model_menu_category": 0,
+    "title": {},
+    "slots": {},
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAAAQ.nab",
+    "rsc_file_name": "AAAAAAQ.rsc",
+    "icon_tar_file_name": "AAAAAAQ.tar",
+    "dov_file_name": "AAAAAAQ.dov",
+    "ai_model_id": "AAAAAAQ",
+    "ai_model_id_number": 2,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 0,
+    "ai_model_menu_category": 0,
+    "title": {},
+    "slots": {
+      "slot1": 5,
+      "slot2": 6
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAAAY.nab",
+    "rsc_file_name": "AAAAAAY.rsc",
+    "icon_tar_file_name": "AAAAAAY.tar",
+    "dov_file_name": "AAAAAAY.dov",
+    "ai_model_id": "AAAAAAY",
+    "ai_model_id_number": 3,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 1,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 12,
+      "slot2": 13
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAABA.nab",
+    "rsc_file_name": "AAAAABA.rsc",
+    "icon_tar_file_name": "AAAAABA.tar",
+    "dov_file_name": "AAAAABA.dov",
+    "ai_model_id": "AAAAABA",
+    "ai_model_id_number": 4,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 0,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 14,
+      "slot2": 15
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAABI.nab",
+    "rsc_file_name": "AAAAABI.rsc",
+    "icon_tar_file_name": "AAAAABI.tar",
+    "dov_file_name": "AAAAABI.dov",
+    "ai_model_id": "AAAAABI",
+    "ai_model_id_number": 5,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 3,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 7,
+      "slot2": 8
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAABQ.nab",
+    "rsc_file_name": "AAAAABQ.rsc",
+    "icon_tar_file_name": "AAAAABQ.tar",
+    "dov_file_name": "AAAAABQ.dov",
+    "ai_model_id": "AAAAABQ",
+    "ai_model_id_number": 6,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 4,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 7,
+      "slot2": 8
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAABY.nab",
+    "rsc_file_name": "AAAAABY.rsc",
+    "icon_tar_file_name": "AAAAABY.tar",
+    "dov_file_name": "AAAAABY.dov",
+    "ai_model_id": "AAAAABY",
+    "ai_model_id_number": 7,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 2,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 7,
+      "slot2": 8
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAACA.nab",
+    "rsc_file_name": "AAAAACA.rsc",
+    "icon_tar_file_name": "AAAAACA.tar",
+    "dov_file_name": "AAAAACA.dov",
+    "ai_model_id": "AAAAACA",
+    "ai_model_id_number": 8,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 6,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 9
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAACI.nab",
+    "rsc_file_name": "AAAAACI.rsc",
+    "icon_tar_file_name": "AAAAACI.tar",
+    "dov_file_name": "AAAAACI.dov",
+    "ai_model_id": "AAAAACI",
+    "ai_model_id_number": 9,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 7,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot2": 10
+    },
+    "icons": {},
+    "_camera": "r5"
+  },
+  {
+    "na_file_name": "AAAAAAI.nab",
+    "rsc_file_name": "AAAAAAI.rsc",
+    "icon_tar_file_name": "AAAAAAI.tar",
+    "dov_file_name": "AAAAAAI.dov",
+    "ai_model_id": "AAAAAAI",
+    "ai_model_id_number": 1,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 0,
+    "ai_model_menu_category": 0,
+    "title": {},
+    "slots": {},
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAAAQ.nab",
+    "rsc_file_name": "AAAAAAQ.rsc",
+    "icon_tar_file_name": "AAAAAAQ.tar",
+    "dov_file_name": "AAAAAAQ.dov",
+    "ai_model_id": "AAAAAAQ",
+    "ai_model_id_number": 2,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 0,
+    "ai_model_menu_category": 0,
+    "title": {},
+    "slots": {
+      "slot1": 5,
+      "slot2": 6
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAAAY.nab",
+    "rsc_file_name": "AAAAAAY.rsc",
+    "icon_tar_file_name": "AAAAAAY.tar",
+    "dov_file_name": "AAAAAAY.dov",
+    "ai_model_id": "AAAAAAY",
+    "ai_model_id_number": 3,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 1,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 18,
+      "slot2": 19
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAABA.nab",
+    "rsc_file_name": "AAAAABA.rsc",
+    "icon_tar_file_name": "AAAAABA.tar",
+    "dov_file_name": "AAAAABA.dov",
+    "ai_model_id": "AAAAABA",
+    "ai_model_id_number": 4,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 0,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 14,
+      "slot2": 15
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAABI.nab",
+    "rsc_file_name": "AAAAABI.rsc",
+    "icon_tar_file_name": "AAAAABI.tar",
+    "dov_file_name": "AAAAABI.dov",
+    "ai_model_id": "AAAAABI",
+    "ai_model_id_number": 5,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 3,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 7,
+      "slot2": 8
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAABQ.nab",
+    "rsc_file_name": "AAAAABQ.rsc",
+    "icon_tar_file_name": "AAAAABQ.tar",
+    "dov_file_name": "AAAAABQ.dov",
+    "ai_model_id": "AAAAABQ",
+    "ai_model_id_number": 6,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 4,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 7,
+      "slot2": 8
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAABY.nab",
+    "rsc_file_name": "AAAAABY.rsc",
+    "icon_tar_file_name": "AAAAABY.tar",
+    "dov_file_name": "AAAAABY.dov",
+    "ai_model_id": "AAAAABY",
+    "ai_model_id_number": 7,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 2,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 7,
+      "slot2": 8
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAACA.nab",
+    "rsc_file_name": "AAAAACA.rsc",
+    "icon_tar_file_name": "AAAAACA.tar",
+    "dov_file_name": "AAAAACA.dov",
+    "ai_model_id": "AAAAACA",
+    "ai_model_id_number": 8,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 6,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 9
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAACI.nab",
+    "rsc_file_name": "AAAAACI.rsc",
+    "icon_tar_file_name": "AAAAACI.tar",
+    "dov_file_name": "AAAAACI.dov",
+    "ai_model_id": "AAAAACI",
+    "ai_model_id_number": 9,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 7,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot2": 10,
+      "slot3": 16
+    },
+    "icons": {},
+    "_camera": "1m2"
+  },
+  {
+    "na_file_name": "AAAAACQ.nab",
+    "rsc_file_name": "AAAAACQ.rsc",
+    "icon_tar_file_name": "AAAAACQ.tar",
+    "dov_file_name": "AAAAACQ.dov",
+    "ai_model_id": "AAAAACQ",
+    "ai_model_id_number": 10,
+    "ai_model_version_code": 1,
+    "ai_model_version_name": "1.00",
+    "ai_model_compertible_version": 1,
+    "ai_model_category": 5,
+    "ai_model_menu_category": 1,
+    "title": {},
+    "slots": {
+      "slot1": 11,
+      "slot2": 17
+    },
+    "icons": {},
+    "_camera": "1m2"
+  }
+]

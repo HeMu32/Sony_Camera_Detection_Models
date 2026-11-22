@@ -61,6 +61,31 @@ struct tensor_io {
     size_t bytes;
 };
 
+static void seed_outputs(const struct tensor_io *io, vx_uint32 count,
+                         const vx_size *start, const char *value)
+{
+    char *end;
+    unsigned long byte = strtoul(value, &end, 0);
+    if (value[0] < '0' || value[0] > '9' || *end || byte > UINT8_MAX) {
+        fputs("NBG_PROBE_OUTPUT_SEED must be one byte (0..255)\n", stderr);
+        exit(2);
+    }
+    for (vx_uint32 i = 0; i < count; ++i) {
+        if (io[i].direction != VX_OUTPUT)
+            continue;
+        unsigned char *pattern = malloc(io[i].bytes);
+        if (!pattern) {
+            fputs("output seed allocation failed\n", stderr);
+            exit(1);
+        }
+        memset(pattern, (int)byte, io[i].bytes);
+        check(vxCopyTensorPatch(io[i].tensor, io[i].rank, start, io[i].shape, io[i].stride,
+                                pattern, VX_WRITE_ONLY, VX_MEMORY_TYPE_HOST), "seed output");
+        free(pattern);
+    }
+    printf("seeded output tensors with %#lx\n", byte);
+}
+
 static struct tensor_io bind_tensor(vx_context context, vx_kernel kernel, vx_node node,
                                    vx_uint32 index)
 {
@@ -175,6 +200,9 @@ int main(int argc, char **argv)
     check(vxVerifyGraph(graph), "vxVerifyGraph");
     puts("graph verified");
     if (argc > 2) {
+        const char *seed = getenv("NBG_PROBE_OUTPUT_SEED");
+        if (seed)
+            seed_outputs(io, count, start, seed);
         if (getenv("NBG_PROBE_SLOT08_SENTINELS")) {
             static const vx_uint32 slots[] = {1, 8, 15};
             if (count != 22 || io[0].direction != VX_INPUT) {

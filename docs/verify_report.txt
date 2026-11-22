@@ -1,0 +1,58 @@
+PASS  7M4: fdn DIC_NUM=2, files=2
+PASS  7M4: aed DIC_NUM=2, files=2
+PASS  7M4: aed2 DIC_NUM=4, files=4
+PASS  7M4: bed DIC_NUM=2, files=2
+PASS  7M4: pdn DIC_NUM=1, files=1
+PASS  7M4: udrt DIC_NUM=2, files=2
+PASS  7RM5: fdn DIC_NUM=2, files=2
+PASS  7RM5: aed DIC_NUM=2, files=2
+PASS  7RM5: aed2 DIC_NUM=4, files=4
+PASS  7RM5: bed DIC_NUM=2, files=2
+PASS  7RM5: pdn DIC_NUM=1, files=1
+PASS  7RM5: scd DIC_NUM=3, files=3
+PASS  7RM5: udrt DIC_NUM=2, files=2
+PASS  1M2: fdn DIC_NUM=2, files=2
+PASS  1M2: aed DIC_NUM=2, files=2
+PASS  1M2: aed2 DIC_NUM=4, files=4
+PASS  1M2: bed DIC_NUM=2, files=2
+PASS  1M2: pdn DIC_NUM=1, files=1
+PASS  1M2: scd DIC_NUM=3, files=3
+PASS  1M2: udrt DIC_NUM=2, files=2
+PASS  7RM5: aed2_dic1.bin identical to 7M4
+PASS  7RM5: aed2_dic2.bin identical to 7M4
+PASS  7RM5: aed2_dica_s2f.bin identical to 7M4
+PASS  7RM5: aed2_dicb_s2f.bin identical to 7M4
+PASS  7RM5: aed_dic1.bin identical to 7M4
+PASS  7RM5: aed_dic2.bin identical to 7M4
+PASS  7RM5: bed_dic1.bin identical to 7M4
+PASS  7RM5: bed_dic2.bin identical to 7M4
+PASS  7RM5: fdn_front_dict.bin identical to 7M4
+PASS  7RM5: fdn_side_dict.bin identical to 7M4
+PASS  7RM5: pdn_dic.bin identical to 7M4
+PASS  7RM5: udrt_dic1.bin identical to 7M4
+PASS  7RM5: udrt_dic2.bin identical to 7M4
+PASS  1M2: aed2_dic1.bin identical to 7M4
+PASS  1M2: aed2_dic2.bin identical to 7M4
+PASS  1M2: aed2_dica_s2f.bin identical to 7M4
+PASS  1M2: aed2_dicb_s2f.bin identical to 7M4
+PASS  1M2: aed_dic1.bin identical to 7M4
+PASS  1M2: aed_dic2.bin identical to 7M4
+PASS  1M2: bed_dic1.bin identical to 7M4
+PASS  1M2: bed_dic2.bin identical to 7M4
+PASS  1M2: fdn_front_dict.bin identical to 7M4
+PASS  1M2: fdn_side_dict.bin identical to 7M4
+PASS  1M2: pdn_dic.bin identical to 7M4
+PASS  1M2: udrt_dic1.bin identical to 7M4
+PASS  1M2: udrt_dic2.bin identical to 7M4
+PASS  7M4: scd present=False (expected False)
+PASS  7RM5: scd present=True (expected True)
+PASS  1M2: scd present=True (expected True)
+PASS  7M4: fdn sections [(12, 24), (18, 30), (24, 48), (36, 60)]
+PASS  7RM5: fdn sections [(12, 24), (18, 30), (24, 48), (36, 60)]
+PASS  1M2: fdn sections [(12, 24), (18, 30), (24, 48), (36, 60)]
+PASS  7M4: aed2 s2f len=145 first6=[0.998953, 0.996829, 0.989381, 0.979039, 0.965398, 0.6346]
+PASS  7RM5: aed2 s2f len=145 first6=[0.998953, 0.996829, 0.989381, 0.979039, 0.965398, 0.6346]
+PASS  1M2: aed2 s2f len=145 first6=[0.998953, 0.996829, 0.989381, 0.979039, 0.965398, 0.6346]
+PASS  7M4: ai_dict present=False (expected False)
+PASS  7RM5: ai_dict present=True (expected True)
+PASS  1M2: ai_dict present=True (expected True)

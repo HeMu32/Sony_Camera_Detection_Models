@@ -1,0 +1,70 @@
+[
+  {
+    "file": "slot01.nb",
+    "size": 1254528,
+    "version": "0x0001000d",
+    "header_d4": 212,
+    "name": "sony_net_opt_NHWC",
+    "layer_count": 152,
+    "operation_count": 421,
+    "input_count": 1,
+    "output_count": 2,
+    "field_5c": 2,
+    "core_count": 1,
+    "field_64": 1,
+    "mem_pool_align": 64,
+    "axi_sram": 1048576,
+    "mem_pool_size": 2097152,
+    "vip_sram": 496,
+    "layer0": [
+      {
+        "segment": "nn table",
+        "size": 116,
+        "offset": 612,
+        "head32": "04000000400000002a0000002800000001000000010000000100000002000000"
+      },
+      {
+        "segment": "tp table",
+        "size": 232,
+        "offset": 844,
+        "head32": "436f6e766f6c7574696f6e52656c75506f6f6c696e674c617965723200000000"
+      },
+      {
+        "segment": "ICD",
+        "size": 11552,
+        "offset": 12396,
+        "head32": "ffff0000ffff0000ffff00000000000000000000030000000300000000000000"
+      },
+      {
+        "segment": "coeff header",
+        "size": 10104,
+        "offset": 158028,
+        "head32": "000000002800000040000000c006000000070000c0020000c009000040090000"
+      },
+      {
+        "segment": "coeff data",
+        "size": 6704,
+        "offset": 164864,
+        "head32": "8a02010811000000130e0108020000004e0e0108000000004f0e010800000000"
+      },
+      {
+        "segment": "ppu instr",
+        "size": 1089664,
+        "offset": 22548,
+        "head32": "0a0340e040404805000000b8004040052040000d000000000008000000250900"
+      },
+      {
+        "segment": "load states",
+        "size": 53248,
+        "offset": 75796,
+        "head32": "82000000500103000002000000a0020000000000810051011800002000000000"
+      },
+      {
+        "segment": "dyna io",
+        "size": 640,
+        "offset": 76436,
+        "head32": "010000001c00000004000000ffffffff00000000000000000000000001000000"
+      }
+    ]
+  }
+]

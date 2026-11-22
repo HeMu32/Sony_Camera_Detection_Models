@@ -8,27 +8,10 @@ import torch
 
 from inspect_nbg_tp_trace import read_trace
 from nbg_cuda_quantization import tp_requantize_u8
+from nbg_integer_quantization import integer_formula
 from slot10_cuda import SCALES as SLOT10
 from verify_nbg_cuda_multiscale import SCALES as SLOT08, interval
 from verify_nbg_cuda_tp40 import decode_quantization
-
-
-def nearest_even(numerator, denominator):
-    low, remainder = divmod(numerator, denominator)
-    return low + (2 * remainder > denominator or
-                  (2 * remainder == denominator and low % 2 != 0))
-
-
-def round_significand(numerator):
-    step = 1 << max(0, abs(numerator).bit_length() - 16)
-    return nearest_even(numerator, step) * step
-
-
-def integer_formula(centered, output_zp, multiplier, shift):
-    denominator = 1 << shift
-    product = round_significand(centered * multiplier)
-    biased = round_significand(product + output_zp * denominator)
-    return max(0, min(255, nearest_even(biased, denominator)))
 
 
 def verify(slot, paths):

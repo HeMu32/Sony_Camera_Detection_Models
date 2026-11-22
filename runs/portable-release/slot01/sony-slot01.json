@@ -1,0 +1,68 @@
+{
+  "slot": 1,
+  "cameras": [
+    "ILCE-7RM5",
+    "ILCE-1M2"
+  ],
+  "original_nbg_sha256": "a5d5ead9478e3b069598483bda95702283d7b0c3d825de02c67250eeea4394b6",
+  "source_files_sha256": {
+    "weights": "a58c68474ed9218e77c6c020b004029f3bdf2728dac70452617e991ca80cc59d",
+    "nn": "a3e255bc16a03fb3c0df93a43422c86df5917801c16313444a71d99df32d6fed",
+    "tp": "cb7f16db87b4ef5322a19b50b99c16413d580c709955b1a241279db90b402f00",
+    "channel_maps": "fe7973022de9b34b49040d78f01737d1dfe376e44550bec5e5aeb6d0dd0f428b"
+  },
+  "interface": {
+    "name": "rgb",
+    "shape": [
+      3,
+      336,
+      512
+    ],
+    "dtype": "uint8",
+    "preprocessing": "EXIF transpose, RGB, bilinear letterbox, pad 128, CHW"
+  },
+  "outputs": [
+    {
+      "index": 0,
+      "name": "output_00",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        40,
+        42,
+        64
+      ],
+      "openvx_shape": [
+        64,
+        42,
+        40,
+        1
+      ],
+      "scale": 0.00762748485,
+      "zero_point": 127
+    },
+    {
+      "index": 1,
+      "name": "output_01",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        19,
+        42,
+        64
+      ],
+      "openvx_shape": [
+        64,
+        42,
+        19,
+        1
+      ],
+      "scale": 0.00384146371,
+      "zero_point": 4
+    }
+  ],
+  "sha256": {
+    "pt": "f3f218279d2e62d844a2062d2658c131106440ccfc55194f02a215ee8b1eed10",
+    "onnx": "3f0331e4135cc733ba42ba8d8b7983b791441df8eb56ecf1a2a9d52fb99270ef"
+  }
+}

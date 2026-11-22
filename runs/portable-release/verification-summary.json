@@ -1,0 +1,148 @@
+{
+  "samples": [
+    "Bird_DSC02510",
+    "Cat_DSC04051",
+    "Empty_DSC03284",
+    "Flight_DSC02983",
+    "Human_DSC03106"
+  ],
+  "slots": {
+    "01": {
+      "formats": {
+        "onnx_cpu": {
+          "tensors": 10,
+          "bytes": 792960,
+          "different_bytes": 0
+        },
+        "torchscript_cpu": {
+          "tensors": 10,
+          "bytes": 792960,
+          "different_bytes": 0
+        }
+      },
+      "input_shape": [
+        3,
+        336,
+        512
+      ],
+      "output_count": 2,
+      "standalone_cpu_load": true,
+      "sha256": {
+        "pt": "f3f218279d2e62d844a2062d2658c131106440ccfc55194f02a215ee8b1eed10",
+        "onnx": "3f0331e4135cc733ba42ba8d8b7983b791441df8eb56ecf1a2a9d52fb99270ef"
+      }
+    },
+    "08": {
+      "formats": {
+        "onnx_cpu": {
+          "tensors": 105,
+          "bytes": 640590,
+          "different_bytes": 0
+        },
+        "torchscript_cpu": {
+          "tensors": 105,
+          "bytes": 640590,
+          "different_bytes": 0
+        }
+      },
+      "input_shape": [
+        3,
+        320,
+        320
+      ],
+      "output_count": 21,
+      "standalone_cpu_load": true,
+      "sha256": {
+        "pt": "8e2067287a96e9e424e05c49c9123f34f6985aa12298a5041d18c3169ecddbb5",
+        "onnx": "76a7194924e46106a9f937f07f98217b267ccedad4c4221e77fb94a673f49d98"
+      }
+    },
+    "10": {
+      "formats": {
+        "onnx_cpu": {
+          "tensors": 105,
+          "bytes": 2048400,
+          "different_bytes": 0
+        },
+        "torchscript_cpu": {
+          "tensors": 105,
+          "bytes": 2048400,
+          "different_bytes": 0
+        }
+      },
+      "input_shape": [
+        3,
+        320,
+        320
+      ],
+      "output_count": 21,
+      "standalone_cpu_load": true,
+      "sha256": {
+        "pt": "a5b843664590fa43a615bdc68faf1e02d659df91e297960366d2288d7cda2574",
+        "onnx": "9910f577a47133d29a66b28296abafdce226aff6170984722f49c107bad7fa77"
+      }
+    },
+    "12": {
+      "formats": {
+        "onnx_cpu": {
+          "tensors": 10,
+          "bytes": 552240,
+          "different_bytes": 0
+        },
+        "torchscript_cpu": {
+          "tensors": 10,
+          "bytes": 552240,
+          "different_bytes": 0
+        }
+      },
+      "input_shape": [
+        3,
+        288,
+        416
+      ],
+      "output_count": 2,
+      "standalone_cpu_load": true,
+      "sha256": {
+        "pt": "5ad07d6d3dd049efda1d57b5f5674a80d690ff48950e9ce4815f7520e25412e2",
+        "onnx": "b327a677941ed7b4765cac00bf52fd78cc6d32e6e3c8afa742e5974954f66912"
+      }
+    },
+    "18": {
+      "formats": {
+        "onnx_cpu": {
+          "tensors": 60,
+          "bytes": 1132560,
+          "different_bytes": 0
+        },
+        "torchscript_cpu": {
+          "tensors": 60,
+          "bytes": 1132560,
+          "different_bytes": 0
+        }
+      },
+      "input_shape": [
+        3,
+        288,
+        416
+      ],
+      "output_count": 12,
+      "standalone_cpu_load": true,
+      "sha256": {
+        "pt": "7a7eac42b8d01b9ff378c5955bfd8e468c2cd5ea268d868fcc0814f2154884a3",
+        "onnx": "fc40c8313b0ebdb3aa72a8551585627ce0dcf1f8b9565d9602071e952831ff4a"
+      }
+    }
+  },
+  "format_totals": {
+    "onnx_cpu": {
+      "tensors": 290,
+      "bytes": 5166750,
+      "different_bytes": 0
+    },
+    "torchscript_cpu": {
+      "tensors": 290,
+      "bytes": 5166750,
+      "different_bytes": 0
+    }
+  }
+}

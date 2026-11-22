@@ -1,0 +1,1617 @@
+{
+  "onnxruntime_version": "1.24.4",
+  "pytorch_version": "2.8.0+cu129",
+  "reference": "original slot-18 NBG in pinned x86 SDK",
+  "samples": {
+    "Human_DSC03106": {
+      "input_sha256": "5679c87e78f9beb3e677cb7f5bc66a11c2847a6633ff3422e6647fd389712d73",
+      "checks": {
+        "onnx_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ],
+        "torchscript_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ]
+      }
+    },
+    "Bird_DSC02510": {
+      "input_sha256": "bb62af83c10a4ad876c38573663f2a4bc273e3e39a7e4e21cd0e5c0dad067414",
+      "checks": {
+        "onnx_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ],
+        "torchscript_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ]
+      }
+    },
+    "Flight_DSC02983": {
+      "input_sha256": "44e18476b135db60840ad39ca1241e73cb3cb0b701b59074b77c8567d76400a8",
+      "checks": {
+        "onnx_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ],
+        "torchscript_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ]
+      }
+    },
+    "Cat_DSC04051": {
+      "input_sha256": "8b937c60b3e21e4327360c104d9e1f726b5493ab1ab07e0eb6849119904e210c",
+      "checks": {
+        "onnx_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ],
+        "torchscript_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ]
+      },
+      "trace": {
+        "tp_bytes": 363660,
+        "nn": [
+          {
+            "command": 1,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 2,
+            "bytes": 239616,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 3,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 4,
+            "bytes": 239616,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 5,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 6,
+            "bytes": 239616,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 7,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 8,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 9,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 10,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 11,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 12,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 13,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 14,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 15,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 16,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 17,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 18,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 19,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 20,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 21,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 22,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 23,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 24,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 25,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 26,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 27,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 28,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 29,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 30,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 31,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 32,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 33,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 34,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 35,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 36,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 37,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 38,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 39,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 40,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 41,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 42,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 43,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 44,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 45,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 46,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 47,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 48,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 49,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 50,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 51,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 52,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 53,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 54,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 55,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 56,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 57,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 58,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 59,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 60,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 61,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 62,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 63,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 64,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 65,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 66,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 67,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 68,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 69,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ]
+      },
+      "onnx_experimental_box_xyxy": [
+        1655.6307692307694,
+        792.2137184115523,
+        2532.9230769230767,
+        2349.2851985559564
+      ]
+    },
+    "Empty_DSC03284": {
+      "input_sha256": "3816916a8d9219c0183a85229c9b9d7f8863158508b7752df8659624d2ddc3ce",
+      "checks": {
+        "onnx_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ],
+        "torchscript_cpu": [
+          {
+            "index": 0,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 1,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 2,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 3,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 4,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 5,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 6,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 7,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 8,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 9,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 10,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "index": 11,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ]
+      },
+      "trace": {
+        "tp_bytes": 363660,
+        "nn": [
+          {
+            "command": 1,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 2,
+            "bytes": 239616,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 3,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 4,
+            "bytes": 239616,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 5,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 6,
+            "bytes": 239616,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 7,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 8,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 9,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 10,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 11,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 12,
+            "bytes": 119808,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 13,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 14,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 15,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 16,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 17,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 18,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 19,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 20,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 21,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 22,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 23,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 24,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 25,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 26,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 27,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 28,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 29,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 30,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 31,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 32,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 33,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 34,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 35,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 36,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 37,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 38,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 39,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 40,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 41,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 42,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 43,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 44,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 45,
+            "bytes": 89856,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 46,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 47,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 48,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 49,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 50,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 51,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 52,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 53,
+            "bytes": 1872,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 54,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 55,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 56,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 57,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 58,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 59,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 60,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 61,
+            "bytes": 33696,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 62,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 63,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 64,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 65,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 66,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 67,
+            "bytes": 67392,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 68,
+            "bytes": 479232,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          },
+          {
+            "command": 69,
+            "bytes": 3744,
+            "different_bytes": 0,
+            "max_abs_code_error": 0
+          }
+        ]
+      },
+      "onnx_experimental_box_xyxy": null
+    }
+  }
+}

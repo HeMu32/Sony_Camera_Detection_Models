@@ -1,0 +1,266 @@
+{
+  "slot": 18,
+  "cameras": [
+    "ILCE-1M2"
+  ],
+  "original_nbg_sha256": "84a35252118fa92ed7a5e36e7f16d5f8b00f0ab6b901d5ba3d83cbc5a4a10e75",
+  "weight_package_sha256": "c73a628ef286ad8c72ddd940de6a64769b0e2492c0027542b1fb30058fa6a43b",
+  "output_nn_commands": [
+    49,
+    51,
+    61,
+    67,
+    57,
+    63,
+    53,
+    65,
+    59,
+    69,
+    55,
+    47
+  ],
+  "interface": {
+    "name": "rgb",
+    "shape": [
+      3,
+      288,
+      416
+    ],
+    "dtype": "uint8",
+    "preprocessing": "EXIF transpose, RGB, bilinear letterbox, pad 128, CHW"
+  },
+  "outputs": [
+    {
+      "index": 0,
+      "name": "output_00",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        18,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        18,
+        1
+      ],
+      "scale": 0.0107074715,
+      "zero_point": 140
+    },
+    {
+      "index": 1,
+      "name": "output_01",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        1,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        1,
+        1
+      ],
+      "scale": 0.00741319219,
+      "zero_point": 149
+    },
+    {
+      "index": 2,
+      "name": "output_02",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        18,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        18,
+        1
+      ],
+      "scale": 0.00450269459,
+      "zero_point": 15
+    },
+    {
+      "index": 3,
+      "name": "output_03",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        36,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        36,
+        1
+      ],
+      "scale": 0.258329451,
+      "zero_point": 125
+    },
+    {
+      "index": 4,
+      "name": "output_04",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        2,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        2,
+        1
+      ],
+      "scale": 0.147856683,
+      "zero_point": 146
+    },
+    {
+      "index": 5,
+      "name": "output_05",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        36,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        36,
+        1
+      ],
+      "scale": 0.0117647061,
+      "zero_point": 127
+    },
+    {
+      "index": 6,
+      "name": "output_06",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        1,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        1,
+        1
+      ],
+      "scale": 0.00833385158,
+      "zero_point": 84
+    },
+    {
+      "index": 7,
+      "name": "output_07",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        2,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        2,
+        1
+      ],
+      "scale": 0.00505091436,
+      "zero_point": 130
+    },
+    {
+      "index": 8,
+      "name": "output_08",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        2,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        2,
+        1
+      ],
+      "scale": 0.246647015,
+      "zero_point": 39
+    },
+    {
+      "index": 9,
+      "name": "output_09",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        2,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        2,
+        1
+      ],
+      "scale": 0.205558524,
+      "zero_point": 1
+    },
+    {
+      "index": 10,
+      "name": "output_10",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        2,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        2,
+        1
+      ],
+      "scale": 0.00839293655,
+      "zero_point": 132
+    },
+    {
+      "index": 11,
+      "name": "output_11",
+      "layout": "CHW",
+      "dtype": "uint8",
+      "shape": [
+        1,
+        36,
+        52
+      ],
+      "openvx_shape": [
+        52,
+        36,
+        1,
+        1
+      ],
+      "scale": 0.00753595121,
+      "zero_point": 115
+    }
+  ],
+  "sha256": {
+    "pt": "7a7eac42b8d01b9ff378c5955bfd8e468c2cd5ea268d868fcc0814f2154884a3",
+    "onnx": "fc40c8313b0ebdb3aa72a8551585627ce0dcf1f8b9565d9602071e952831ff4a"
+  }
+}

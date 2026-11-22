@@ -1,0 +1,424 @@
+{
+  "slot": 10,
+  "cameras": [
+    "ILCE-7RM5",
+    "ILCE-1M2"
+  ],
+  "original_nbg_sha256": "22a46a633b90f780026f57b21b2d34fa1dbd7b49237276a415eb109537da39be",
+  "weight_package_sha256": "f4b40c3a237f9bd5c6ba15e4cb90873166c3febfefeed88ebc11b2fb06a1440b",
+  "interface": {
+    "name": "rgb",
+    "shape": [
+      3,
+      320,
+      320
+    ],
+    "dtype": "uint8",
+    "preprocessing": "EXIF transpose, RGB, bilinear letterbox, pad 128, CHW"
+  },
+  "outputs": [
+    {
+      "index": 0,
+      "name": "output_00",
+      "shape": [
+        18,
+        80,
+        80
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        80,
+        80,
+        18,
+        1
+      ],
+      "scale": 0.127384201,
+      "zero_point": 157,
+      "layout": "CHW"
+    },
+    {
+      "index": 1,
+      "name": "output_01",
+      "shape": [
+        18,
+        40,
+        40
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        40,
+        40,
+        18,
+        1
+      ],
+      "scale": 0.129197836,
+      "zero_point": 145,
+      "layout": "CHW"
+    },
+    {
+      "index": 2,
+      "name": "output_02",
+      "shape": [
+        18,
+        20,
+        20
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        20,
+        20,
+        18,
+        1
+      ],
+      "scale": 0.15894872,
+      "zero_point": 105,
+      "layout": "CHW"
+    },
+    {
+      "index": 3,
+      "name": "output_03",
+      "shape": [
+        18,
+        10,
+        10
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        10,
+        10,
+        18,
+        1
+      ],
+      "scale": 0.158323452,
+      "zero_point": 138,
+      "layout": "CHW"
+    },
+    {
+      "index": 4,
+      "name": "output_04",
+      "shape": [
+        18,
+        5,
+        5
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        5,
+        5,
+        18,
+        1
+      ],
+      "scale": 0.196404055,
+      "zero_point": 127,
+      "layout": "CHW"
+    },
+    {
+      "index": 5,
+      "name": "output_05",
+      "shape": [
+        18,
+        3,
+        3
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        3,
+        3,
+        18,
+        1
+      ],
+      "scale": 0.131796598,
+      "zero_point": 130,
+      "layout": "CHW"
+    },
+    {
+      "index": 6,
+      "name": "output_06",
+      "shape": [
+        18,
+        1,
+        1
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        1,
+        1,
+        18,
+        1
+      ],
+      "scale": 0.13619791,
+      "zero_point": 142,
+      "layout": "CHW"
+    },
+    {
+      "index": 7,
+      "name": "output_07",
+      "shape": [
+        24,
+        80,
+        80
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        80,
+        80,
+        24,
+        1
+      ],
+      "scale": 0.0617020018,
+      "zero_point": 112,
+      "layout": "CHW"
+    },
+    {
+      "index": 8,
+      "name": "output_08",
+      "shape": [
+        24,
+        40,
+        40
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        40,
+        40,
+        24,
+        1
+      ],
+      "scale": 0.0841739997,
+      "zero_point": 131,
+      "layout": "CHW"
+    },
+    {
+      "index": 9,
+      "name": "output_09",
+      "shape": [
+        24,
+        20,
+        20
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        20,
+        20,
+        24,
+        1
+      ],
+      "scale": 0.161569998,
+      "zero_point": 189,
+      "layout": "CHW"
+    },
+    {
+      "index": 10,
+      "name": "output_10",
+      "shape": [
+        24,
+        10,
+        10
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        10,
+        10,
+        24,
+        1
+      ],
+      "scale": 0.193286002,
+      "zero_point": 156,
+      "layout": "CHW"
+    },
+    {
+      "index": 11,
+      "name": "output_11",
+      "shape": [
+        24,
+        5,
+        5
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        5,
+        5,
+        24,
+        1
+      ],
+      "scale": 0.133892998,
+      "zero_point": 122,
+      "layout": "CHW"
+    },
+    {
+      "index": 12,
+      "name": "output_12",
+      "shape": [
+        24,
+        3,
+        3
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        3,
+        3,
+        24,
+        1
+      ],
+      "scale": 0.171483994,
+      "zero_point": 133,
+      "layout": "CHW"
+    },
+    {
+      "index": 13,
+      "name": "output_13",
+      "shape": [
+        24,
+        1,
+        1
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        1,
+        1,
+        24,
+        1
+      ],
+      "scale": 0.0713410005,
+      "zero_point": 174,
+      "layout": "CHW"
+    },
+    {
+      "index": 14,
+      "name": "output_14",
+      "shape": [
+        80,
+        80,
+        6
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        80,
+        80,
+        6,
+        1
+      ],
+      "scale": 0.00390625,
+      "zero_point": 0,
+      "layout": "HWC"
+    },
+    {
+      "index": 15,
+      "name": "output_15",
+      "shape": [
+        40,
+        40,
+        6
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        40,
+        40,
+        6,
+        1
+      ],
+      "scale": 0.00390625,
+      "zero_point": 0,
+      "layout": "HWC"
+    },
+    {
+      "index": 16,
+      "name": "output_16",
+      "shape": [
+        20,
+        20,
+        6
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        20,
+        20,
+        6,
+        1
+      ],
+      "scale": 0.00390625,
+      "zero_point": 0,
+      "layout": "HWC"
+    },
+    {
+      "index": 17,
+      "name": "output_17",
+      "shape": [
+        10,
+        10,
+        6
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        10,
+        10,
+        6,
+        1
+      ],
+      "scale": 0.00390625,
+      "zero_point": 0,
+      "layout": "HWC"
+    },
+    {
+      "index": 18,
+      "name": "output_18",
+      "shape": [
+        5,
+        5,
+        6
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        5,
+        5,
+        6,
+        1
+      ],
+      "scale": 0.00390625,
+      "zero_point": 0,
+      "layout": "HWC"
+    },
+    {
+      "index": 19,
+      "name": "output_19",
+      "shape": [
+        3,
+        3,
+        6
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        3,
+        3,
+        6,
+        1
+      ],
+      "scale": 0.00390625,
+      "zero_point": 0,
+      "layout": "HWC"
+    },
+    {
+      "index": 20,
+      "name": "output_20",
+      "shape": [
+        1,
+        1,
+        6
+      ],
+      "dtype": "uint8",
+      "openvx_shape": [
+        1,
+        1,
+        6,
+        1
+      ],
+      "scale": 0.00390625,
+      "zero_point": 0,
+      "layout": "HWC"
+    }
+  ],
+  "sha256": {
+    "pt": "a5b843664590fa43a615bdc68faf1e02d659df91e297960366d2288d7cda2574",
+    "onnx": "9910f577a47133d29a66b28296abafdce226aff6170984722f49c107bad7fa77"
+  }
+}
