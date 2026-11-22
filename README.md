@@ -1,25 +1,29 @@
 # Sony 相机视觉检测模型
 
-从 Sony 固件提取原始视觉检测模型，在主机上运行并用实拍样例核对结果。
-不使用相机机身、VIP9000 硬件或替代模型。
+本仓库从 Sony 相机固件中提取「拍摄主体识别」的视觉模型，已在电脑上运行 A7R V 和 A1 II 的部分模型。
+已经用实拍照片确定模型能成功找出鸟、飞机、人或猫，以及能画出合理的检出框。
 
 | 机型 | 当前进展 |
 |---|---|
-| **A7R V / A1 II** | 原始 NBG 可在 x86 软件模拟器执行；鸟和飞机有 CUDA 路径和原 Adam 框解码。人体和猫有宿主侧实验构框，不等于原厂后处理。 |
-| **A7 IV** | 已定位 FDN／PDN 门限、AED／BED 参数和部分结果路径，并回放原 SA 控制流。首个图像算子的算术尚未复现，没有可验收的实图框。研究已暂停，未作为完成版交付。 |
+| **A7R V 和 A1 II** | 鸟和飞机模型已在电脑上跑通。[复现脚本](tools/probe_sony_adam_xhd.py)在电脑上模拟执行 Sony 相机固件中的检测框解码代码，把模型输出转成检测框。人和猫的模型也能运行，但检出框的生成算法是本项目的实验方法，不代表相机实际会画出同样的框。 |
+| **A7 IV** | 已从固件找到部分识别参数，但还没能在电脑上复现完整的图像计算。这部分研究已暂停。 |
 
 ## 可用交付物
 
-- **独立运行模型：**[ONNX / TorchScript 模型表](docs/PORTABLE-EXPORT.md)链接到仓库中的五槽导出及接口说明。槽 `1/8/10`（人体／鸟／飞机）由两机共享，猫分别是 A7R V 槽 `12` 和 A1 II 槽 `18`。模型输出张量，不内置读图或框解码。
-- **实图结果：**原 Adam 解码的[鸟](debug/visual_checks/adam-native-r5-bird.png)、[飞机](debug/visual_checks/adam-native-1m2-flight.png)、[天际线](debug/visual_checks/adam-native-r5-empty.png)叠图。鸟图有两条对位框但仍有漏检，飞机略切机鼻，天际线零框。[原解码与全部结果](docs/ADAM-XHD.md)
-- **复现：**[CPU／CUDA 快速开始](docs/TWO-CAMERA-QUICKSTART.md)和[舍入对照](docs/NBG-ROUNDING-AB.md)。CUDA 不用 FP64；与固定 x86 SDK 的逐字节一致仅适用于已测样本，不代表与实机位一致。完整固件、CP 镜像、第三方 SDK 和大型中间转储不随仓库提供。
+- **看结果：**[鸟](debug/visual_checks/adam-native-r5-bird.png)图中两只鸟被正确框住，仍有漏检成因待查；[飞机](debug/visual_checks/adam-native-1m2-flight.png)框略切机鼻；不包含受支持的识别主体的样本[天际线](debug/visual_checks/adam-native-r5-empty.png)则没有检出框。
+- **原始模型文件与格式研究：** A7R V 和 A1 II 的固件用 `default.nab` 打包多个模型。[提取脚本](parsers/nab_extract.py)把它拆成单个 `.nb` 文件，仓库已收录 [A7R V](nab_graphs/r5_slots/) 和 [A1 II](nab_graphs/1m2_slots/) 的部分原始文件及其编号和校验值。`.nb` 里的模型采用芯片厂商的专用格式 NBG（Network Binary Graph），保存的是给相机芯片运行的指令和数据，不是能直接交给通用框架加载的权重。以[鸟模型](docs/SLOT08-CUDA.md)和[飞机模型](docs/SLOT10-CUDA.md)为例，我们先在电脑上用芯片厂商的软件模拟器运行原文件，记录计算实际用到的权重、偏置以及整数舍入和缩放规则，再用这些参数独立实现计算，并对照模拟器的输出。这是针对选定模型的复现，不是任意 `.nb` 文件都能用的转换器。
+- **用 (本项目转换后的) 模型：**[模型文件和输入输出说明](docs/PORTABLE-EXPORT.md)。仓库提供五个可独立加载的模型：A7R V 和 A1 II两机共用的人体、鸟和飞机模型，以及两机各自的猫模型。ONNX 和 TorchScript 是转换后的格式，并非从固件直接取出的文件；已测样例的对照结果见模型说明，不保证其他输入也一致。
+- **自己跑一遍：**[电脑上的运行步骤](docs/TWO-CAMERA-QUICKSTART.md#运行)介绍如何用处理器或 NVIDIA 显卡运行并画框。[鸟和飞机的固件框解码说明](docs/ADAM-XHD.md)记录了如何复现上面的实图结果。完整固件和第三方工具包不随仓库提供。
 
-人体和猫的框是从网络输出构造的原图像素 `xyxy`，不是地标点。不同槽分别运行后在主机合并，也不是 A1 II 固件同帧跨类 Auto 的证明。
+对A1 II 自动识别模式的工作逻辑目前不够明确。已查明 A1 II 自动识别模式如何分派部分检测任务，但还没有验证机身会在同一帧同时报告不同类别。把分别运行的鸟和飞机结果画在同一张照片上，不算验证了这项机身行为。
+
+## 自动对焦研究
+
+暂时没有详细分析识别算法的时域逻辑, 也暂时没有详细分析追踪AF算法. 
+- [从取景画面到镜头动作：两张分机型流程图](docs/AF-VISION-PIPELINE.md#1-分机型流程图)。分别说明 A7 IV 与 A7R V／A1 II，标出哪些步骤已验证、哪些连接还不清楚。另有[登记人脸优先](docs/AF-REGISTERED-FACE.md)专题，解释它与连续跟踪同一个人的区别。
+- [检测结果如何筛选](docs/AF-DETECTION-DECISION.md)与[跨帧跟踪](docs/AF-VISUAL-TRACKING.md)：记录了固件中如何判断候选是否有效，以及目标丢失后退回普通跟踪的部分证据。已有局部验证，但还没有在电脑上完整复现追踪对焦。
 
 ## 研究入口
 
-- [检测流程与证据边界](docs/AF-VISION-PIPELINE.md)
-- [A7 IV 固件、门限和未完成的主机前向](docs/A7IV-SA-FORWARD.md)
-- [最新暂停点与历史交接](HANDOVER.md)
-
-样例在 [`assets_aux/`](assets_aux/)，原始网络与解析脚本在 [`nab_graphs/`](nab_graphs/) 和 [`parsers/`](parsers/)，主机执行和回归工具在 [`tools/`](tools/)。
+- [鸟和飞机的检测框是怎么得到的](docs/ADAM-XHD.md)
+- [A7 IV 已查明的参数和尚未跑通的步骤](docs/A7IV-SA-FORWARD.md)
